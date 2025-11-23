@@ -1,3 +1,3 @@
-# jvonaesch_ethz.github.io
+## Teaching
 
 Nothing to see here yet...
