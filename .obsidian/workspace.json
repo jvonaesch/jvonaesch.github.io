@@ -180,7 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 282.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,7 +194,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e4edb8c58459ffbf",
+  "active": "26ae99528a0ca5f1",
   "lastOpenFiles": [
     "teaching/index.md",
     "index.md"
