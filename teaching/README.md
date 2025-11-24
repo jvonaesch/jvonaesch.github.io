@@ -1,6 +1,3 @@
 ## Teaching
 
 Nothing to see here yet...
-
-But a tiny little bit more...
-
