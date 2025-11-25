@@ -194,8 +194,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "26ae99528a0ca5f1",
+  "active": "e4edb8c58459ffbf",
   "lastOpenFiles": [
+    "_layouts/default.html",
+    "_layouts/New Text Document.txt",
+    "_layouts",
+    "layouts",
+    "New folder",
     "teaching/index.md",
     "index.md"
   ]
