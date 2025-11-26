@@ -8,4 +8,4 @@ defaults:
       #type: "pages"   # optional: apply only to pages
     values:
       sidebar:
-        nav: "{{ site.data.navigation.nav }}"
+        nav: foo
