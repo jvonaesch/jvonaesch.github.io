@@ -11,6 +11,7 @@ defaults:
     values:
       sidebar:
         nav: main
+      layout: page
   - scope:
       path: "teaching"
     values:
