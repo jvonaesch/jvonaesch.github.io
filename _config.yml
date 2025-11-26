@@ -1,11 +1,13 @@
-theme: jekyll-theme-minimal
+
 title: Jonas Vonäsch ETHZ
 description: 
 
+theme: jekyll_theme_minimal
+
 defaults:
   - scope:
-      path: ""        # apply to all pages (adjust path/type as needed)
-      #type: "pages"   # optional: apply only to pages
+      path: ""
+      #type: "pages"
     values:
       sidebar:
         nav: main
@@ -14,3 +16,6 @@ defaults:
     values:
       sidebar:
         nav: teaching
+
+sass:
+  quiet_deps: true
