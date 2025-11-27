@@ -1,0 +1,32 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.wrapper {
+    max-width: 800px;
+    min-width: 200px;
+    width: 800px;
+
+    text-align: left;
+}
+
+.site-header {
+    padding: 30px;
+    margin: 20px;
+    
+    background-color: var(--bg2);
+}
+
+.site-title {
+    color: var(--title);
+}
+
+section {
+    padding: 30px;
+    margin: 20px;
+
+    background-color: var(--bg2);
+}

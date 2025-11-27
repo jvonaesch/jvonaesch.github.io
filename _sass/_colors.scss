@@ -1,10 +1,11 @@
 :root {
 
     @media (prefers-color-scheme: light) {
-        --bg: #ffffff;
+        --bg: #fdfdfd;
         --bg2: #f7f7f7;
         --contrast: #000000;
-        --text: #666666;
+        --text: #151515;
+        --title: #6b0098;
         --highlight: #7affc8;
 
         --link: #555555;
@@ -12,10 +13,11 @@
     }
 
     @media (prefers-color-scheme: dark) {
-        --bg: #696969;
+        --bg: #2f2f2f;
         --bg2: #424242;
         --contrast: #ffffff;
         --text: #EEEEEE;
+        --title: #e5a8ff;
         --highlight: #fff;
 
         --link: #c4c4c4;
