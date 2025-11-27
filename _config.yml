@@ -2,7 +2,7 @@
 title: Jonas Vonäsch ETHZ
 description: 
 
-theme: jekyll_theme_minimal
+theme: minima
 
 defaults:
   - scope:
@@ -18,5 +18,10 @@ defaults:
       sidebar:
         nav: teaching
 
-sass:
-  quiet_deps: true
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
