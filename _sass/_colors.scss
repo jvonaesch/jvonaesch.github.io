@@ -1,0 +1,38 @@
+:root {
+
+    @media (prefers-color-scheme: light) {
+        --bg: #ffffff;
+        --bg2: #f7f7f7;
+        --contrast: #000000;
+        --text: #666666;
+        --highlight: #7affc8;
+
+        --link: #555555;
+        --visited: #777777;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        --bg: #696969;
+        --bg2: #424242;
+        --contrast: #ffffff;
+        --text: #EEEEEE;
+        --highlight: #fff;
+
+        --link: #c4c4c4;
+        --visited: #9f9f9f;
+    }
+
+    --primary: #9C0003;
+    --secondary: #CD0005;
+
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+:link {
+    color: var(--link)
+}
+
+:visited {
+    color: var(--visited)
+}

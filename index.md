@@ -1,6 +1,7 @@
 ---
 ---
 
-[Teaching](teaching)
 
+- [Teaching](teaching)
+- [Contact](contact)
 

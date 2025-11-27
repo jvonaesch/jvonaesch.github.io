@@ -9,14 +9,12 @@ defaults:
       path: ""
       #type: "pages"
     values:
-      sidebar:
-        nav: main
+      nav: main
       layout: page
   - scope:
       path: "teaching"
     values:
-      sidebar:
-        nav: teaching
+      nav: teaching
 
 plugins:
   - jekyll-feed

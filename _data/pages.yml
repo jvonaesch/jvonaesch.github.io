@@ -1,0 +1,11 @@
+main:
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Contact"
+    url: /contact/
+
+teaching:
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Contact"
+    url: /contact/
