@@ -6,16 +6,16 @@ body {
 }
 
 .wrapper {
-    max-width: 800px;
+    max-width: 900px;
     min-width: 200px;
-    width: 800px;
+    width: 900px;
 
     text-align: left;
 }
 
 .site-header {
     padding: 30px;
-    margin: 20px;
+    margin: 10px;
     
     background-color: var(--bg2);
 }
@@ -26,7 +26,7 @@ body {
 
 section {
     padding: 30px;
-    margin: 20px;
+    margin: 10px;
 
     background-color: var(--bg2);
 }
