@@ -3,6 +3,6 @@
 
 Nothing to see here yet...
 
-### Categories:
-- One
-- Two
+- Lorem
+- Ipsum
+- [dolor](..)

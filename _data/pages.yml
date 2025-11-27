@@ -2,10 +2,10 @@ main:
   - title: "Teaching"
     url: /teaching/
   - title: "Contact"
-    url: /contact/
+    url: /contact
 
 teaching:
   - title: "Teaching"
     url: /teaching/
   - title: "Contact"
-    url: /contact/
+    url: /contact
