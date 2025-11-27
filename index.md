@@ -1,7 +1,6 @@
 ---
 ---
 
-## About
-[Teaching](pages/teaching)
+[Teaching](teaching)
 
 
