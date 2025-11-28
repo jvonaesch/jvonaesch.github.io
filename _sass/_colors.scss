@@ -3,7 +3,7 @@
     @media (prefers-color-scheme: light) {
         --bg-base: #f6f6f6;
         --bg-section: #fdfdfd;
-        --bg-accent: #eeeeee;
+        --bg-accent: #fdfdfd;
         --contrast: #000000;
         --text: #151515;
         --title: #4400bb;
@@ -19,7 +19,7 @@
         --bg-accent: #202020;
         --contrast: #ffffff;
         --text: #EEEEEE;
-        --title: #F63194;
+        --title: #ff41a0;
         --highlight: #fff;
 
         --link: #c4c4c4;
@@ -42,4 +42,9 @@
 
 :visited {
     color: var(--visited)
+}
+
+::selection {
+    background: var(--title);
+    color: var(--bg-section);
 }
