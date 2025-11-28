@@ -5,6 +5,9 @@
     align-items: center;
     justify-content: center;
 
+    min-width: 0;
+    width: 100%;
+
     --outer-radius: 45px;
     --border-radius: 30px;
     --inner-radius: 15px;
@@ -23,6 +26,7 @@
 body {
     display: flex;
     align-items: stretch;
+    min-width: 0;
 
     justify-content: center;
     justify-items: stretch;  
@@ -31,7 +35,7 @@ body {
 .wrapper {
     max-width: 900px;
     //min-width: 200px;
-    width: 900px;
+    width: 100%;
 
     padding: 0px;
     margin: var(--base-margin);
@@ -64,7 +68,7 @@ body {
 }
 
 .sidebar {
-    width: 200px;
+    //width: 200px;
     height: 100%;
 
     margin: var(--base-margin);
