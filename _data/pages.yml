@@ -1,11 +1,11 @@
 main:
+  - title: "About"
+    url: /
   - title: "Teaching"
     url: /teaching/
-  - title: "Contact"
-    url: /contact.html
 
 teaching:
+  - title: "About"
+    url: /
   - title: "Teaching"
     url: /teaching/
-  - title: "Contact"
-    url: /contact.html

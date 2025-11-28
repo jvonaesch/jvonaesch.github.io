@@ -13,15 +13,24 @@
 
   <body>
 
+    <!--<div class="sidebar">
+
+      <p> Lorem ipsum?</p>
+
+    </div>-->
+
     <div class="wrapper">
 
       <div class="site-header">
-        <h1 class="site-title">{{ site.title | default: site.github.repository_name }}</h1>
+        <div  class="site-title-frame">
 
-        {% if page.nav %}
-          {% include page-bar.html nav=page.nav %}
-        {% endif %}
+          <h1 class="site-title">{{ site.title | default: site.github.repository_name }}</h1>
 
+          {% if page.nav %}
+            {% include page-bar.html nav=page.nav %}
+          {% endif %}
+
+        </div>
       </div>
 
       <section>
@@ -29,6 +38,18 @@
         {{content}}
 
       </section>
+
+      <footer>
+
+        <div class="footer-block">
+          <p class="footer-text">Contact</p>
+        </div>
+
+        <div class="footer-block">
+          <p class="footer-text">Other</p>
+        </div>
+
+      </footer>
 
     </div>
   </body>

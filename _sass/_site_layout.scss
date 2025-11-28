@@ -1,32 +1,109 @@
 
+:root {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    --outer-radius: 45px;
+    --border-radius: 30px;
+    --inner-radius: 15px;
+    --border-width: 15px;
+
+    --base-margin: 10px;
+    --base-pad: 30px;
+
+    @media only screen and (max-width: 800px) {
+        body {
+            flex-direction: row;
+        }
+    } 
+}
+
 body {
     display: flex;
+    align-items: stretch;
+
     justify-content: center;
-    align-items: center; 
+    justify-items: stretch;  
 }
 
 .wrapper {
     max-width: 900px;
-    min-width: 200px;
+    //min-width: 200px;
     width: 900px;
+
+    padding: 0px;
+    margin: var(--base-margin);
+
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
 
     text-align: left;
 }
 
 .site-header {
-    padding: 30px;
-    margin: 10px;
-    
-    background-color: var(--bg2);
+    padding: var(--base-pad);
+
+    border-radius: var(--outer-radius);
+    background-image: var(--gradient);
+}
+
+.site-title-frame {
+    padding: var(--base-pad);
+
+    border-radius: var(--inner-radius);
+    background: var(--bg-section);
 }
 
 .site-title {
+    margin-top: 0px;
+
     color: var(--title);
 }
 
-section {
-    padding: 30px;
-    margin: 10px;
+.sidebar {
+    width: 200px;
+    height: 100%;
 
-    background-color: var(--bg2);
+    margin: var(--base-margin);
+    margin-right: 0;
+    padding: var(--base-pad);
+
+    border-radius: var(--border-radius);
+    background: var(--bg-section)
+}
+
+section {
+    padding: var(--base-pad);
+    margin-top: var(--base-margin);
+
+    border-radius: var(--border-radius);
+    background: var(--bg-section);
+}
+
+footer {
+    display: flex;
+    align-items: top;
+    justify-items: left;
+    flex-direction: row;
+
+    padding: var(--base-margin);
+    margin-top: var(--base-margin);
+
+    border-radius: var(--border-radius);
+    background: var(--bg-accent);
+}
+
+.footer-block {
+    padding: var(--base-pad);
+    margin-right: var(--base-margin);
+
+    border-radius: var(--border-radius);
+    background: var(--bg-base);
+}
+
+.footer-text {
+    margin: 0;
 }

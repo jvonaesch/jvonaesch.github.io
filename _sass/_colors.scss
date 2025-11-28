@@ -1,11 +1,12 @@
 :root {
 
     @media (prefers-color-scheme: light) {
-        --bg: #f6f6f6;
-        --bg2: #fdfdfd;
+        --bg-base: #f6f6f6;
+        --bg-section: #fdfdfd;
+        --bg-accent: #eeeeee;
         --contrast: #000000;
         --text: #151515;
-        --title: #6b0098;
+        --title: #4400bb;
         --highlight: #7affc8;
 
         --link: #555555;
@@ -13,22 +14,26 @@
     }
 
     @media (prefers-color-scheme: dark) {
-        --bg: #2f2f2f;
-        --bg2: #202020;
+        --bg-base: #2f2f2f;
+        --bg-section: #202020;
+        --bg-accent: #323232;
         --contrast: #ffffff;
         --text: #EEEEEE;
-        --title: #e5a8ff;
+        --title: #F63194;
         --highlight: #fff;
 
         --link: #c4c4c4;
         --visited: #9f9f9f;
     }
 
-    --primary: #9C0003;
-    --secondary: #CD0005;
+    --grad-1: #FF7400;
+    --grad-2: #ff00b7;
+    --grad-3: #0008FF;
+
+    --gradient: linear-gradient(to right ,var(--grad-1), var(--grad-2));
 
     color: var(--text);
-    background-color: var(--bg);
+    background-color: var(--bg-base);
 }
 
 :link {
