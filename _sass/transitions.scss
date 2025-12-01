@@ -14,9 +14,19 @@
 
 .page-bar-link {
     transition-duration: var(--transition-time);
+    transition-property: background, color;
 }
 
 .page-bar-link:hover {
     background: var(--hover-bg);
     color: var(--text);
+}
+
+
+a {
+    transition-duration: var(--transition-time);
+}
+
+a:hover {
+    color: var(--hover-link);
 }
