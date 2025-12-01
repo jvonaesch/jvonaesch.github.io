@@ -1,15 +1,23 @@
 {% assign pages = site.data.pages[include.nav] %}
 
-<p>
+<div class="page-bar">
+  <p>
 
-  {% if pages[0].url %}
-    <a href="{{ pages[0].url | relative_url }}">{{ pages[0].title }}</a>
-  {% endif %}
+    <!--{% if pages[0].url %}
+      <a class="page-bar-link", href="{{ pages[0].url | relative_url }}">{{ pages[0].title }}</a>
+    {% endif %}
 
-  {% for page in pages offset:1 %}
-      {% if page.url %}
-          &nbsp;|&nbsp;<a href="{{ page.url | relative_url }}">{{ page.title }}</a>
-      {% endif %}
-  {% endfor %}
+    {% for page in pages offset:1 %}
+        {% if page.url %}
+            &nbsp;|&nbsp;<a class="page-bar-link", href="{{ page.url | relative_url }}">{{ page.title }}</a>
+        {% endif %}
+    {% endfor %}-->
 
-</p>
+    {% for page in pages%}
+        {% if page.url %}
+            <a class="page-bar-link", href="{{ page.url | relative_url }}">&nbsp;{{ page.title }}&nbsp;</a>
+        {% endif %}
+    {% endfor %}
+
+  </p>
+</div>

@@ -1,0 +1,22 @@
+:root {
+    --transition-time: 0.6s
+}
+
+
+.footer-block {
+    transition: background var(--transition-time);
+}
+
+.footer-block:hover {
+    background: var(--bg-section);
+}
+
+
+.page-bar-link {
+    transition-duration: var(--transition-time);
+}
+
+.page-bar-link:hover {
+    background: var(--hover-bg);
+    color: var(--text);
+}

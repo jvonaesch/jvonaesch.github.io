@@ -8,13 +8,14 @@
     min-width: 0;
     width: 100%;
 
-    --outer-radius: 45px;
-    --border-radius: 30px;
     --inner-radius: 15px;
+    --border-radius: 30px;
+    --outer-radius: 45px;
     --border-width: 15px;
 
     --base-margin: 10px;
-    --base-pad: 30px;
+    --root-pad: 30px;
+    --inner-pad: 15px;
 
     @media only screen and (max-width: 800px) {
         body {
@@ -34,7 +35,6 @@ body {
 
 .wrapper {
     max-width: 900px;
-    //min-width: 200px;
     width: 100%;
 
     padding: 0px;
@@ -47,46 +47,63 @@ body {
     text-align: left;
 }
 
+// Title
 .site-header {
-    padding: var(--base-pad);
+    padding: var(--root-pad);
 
     border-radius: var(--outer-radius);
-    background-image: var(--gradient);
+    background-image: var(--root-gradient);
 }
 
 .site-title-frame {
-    padding: var(--base-pad);
+    padding: var(--inner-pad);
 
     border-radius: var(--inner-radius);
     background: var(--bg-section);
 }
 
 .site-title {
-    margin-top: 0px;
-
+    margin: 20px;
+    margin-top: var(--inner-pad);
     color: var(--title);
 }
 
+.page-bar {
+    padding: 5px;
+}
+
+.page-bar-link {
+    border-radius: var(--inner-pad);
+    padding: var(--inner-pad);
+    margin-right: var(--inner-pad);
+    margin-left: 0px;
+
+    background-color: var(--bg-base);
+    text-decoration: none;
+}
+
+// Sidebar
 .sidebar {
-    //width: 200px;
     height: 100%;
 
     margin: var(--base-margin);
     margin-right: 0;
-    padding: var(--base-pad);
+    padding: var(--root-pad);
 
     border-radius: var(--border-radius);
     background: var(--bg-section)
 }
 
+// Section
 section {
-    padding: var(--base-pad);
+    padding: var(--root-pad);
     margin-top: var(--base-margin);
 
     border-radius: var(--border-radius);
     background: var(--bg-section);
 }
 
+// Footer
 footer {
     display: flex;
     align-items: top;
@@ -101,7 +118,7 @@ footer {
 }
 
 .footer-block {
-    padding: var(--base-pad);
+    padding: var(--root-pad);
     margin-right: var(--base-margin);
 
     border-radius: var(--border-radius);
