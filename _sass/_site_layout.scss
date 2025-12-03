@@ -8,10 +8,10 @@
     min-width: 0;
     width: 100%;
 
-    --inner-radius: 15px;
+    --inner-radius: 20px;
     --border-radius: 30px;
     --outer-radius: 45px;
-    --border-width: 15px;
+    --border-width: 30px;
 
     --base-margin: 10px;
     --root-pad: 30px;
@@ -53,7 +53,7 @@ body {
 
 // Title
 .site-header {
-    padding: var(--root-pad);
+    padding: var(--border-width);
 
     border-radius: var(--outer-radius);
     background-image: var(--root-gradient);
@@ -67,8 +67,9 @@ body {
 }
 
 .site-title {
-    margin: 20px;
-    margin-top: var(--inner-pad);
+    margin: 0px;
+    padding: var(--inner-pad);
+
     color: var(--title);
 }
 
@@ -80,10 +81,12 @@ body {
     border-radius: var(--inner-pad);
     padding: var(--inner-pad);
     margin-right: var(--inner-pad);
+    margin-top: var(--inner-pad);
     margin-left: 0px;
 
     background-color: var(--bg-base);
-    text-decoration: none;
+    color: var(--link);
+    border-width: 0;
 }
 
 // Sidebar

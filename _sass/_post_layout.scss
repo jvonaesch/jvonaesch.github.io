@@ -1,5 +1,20 @@
+:root {
+    --h1-size: 30px;
+}
 
+.post-title {
+    color: var(--title);
+    font-size: var(--h1-size);
+    font-family: var(--font-family);
+    margin: 0px;
+}
 
-.post-header {
+h1 {
+    color: var(--title);
+    font-size: var(--h1-size);
+    font-family: var(--font-family);
+}
+
+h2 {
     color: var(--title);
 }

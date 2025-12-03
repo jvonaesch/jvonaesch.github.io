@@ -6,9 +6,10 @@
         --bg-accent: #fdfdfd;
         --hover-bg: #ff7050;
 
-        --contrast: #000000;
         --text: #151515;
         --title: #4400bb;
+        --primary: #ff7b00;
+        --secondary: #ff41a0;
         --highlight: #7affc8;
         --hover-link: #4400bb;
 
@@ -20,11 +21,12 @@
         --bg-base: #2f2f2f;
         --bg-section: #202020;
         --bg-accent: #202020;
-        --hover-bg: #cb0040;
+        --hover-bg: #cb3d00;
 
-        --contrast: #ffffff;
         --text: #EEEEEE;
         --title: #ff41a0;
+        --primary: #ff7b00;
+        --secondary: #ff41a0;
         --highlight: #fff;
         --hover-link: #ff7a78;
 
@@ -32,9 +34,10 @@
         --visited: #9f9f9f;
     }
 
-    --root-gradient-1: #FF7400;
-    --root-gradient-2: #ff00b7;
-    --root-gradient-3: #0008FF;
+    //--root-gradient-1: #FF7400;
+    //--root-gradient-2: #ff00b7;
+    --root-gradient-1: var(--primary);
+    --root-gradient-2: var(--secondary);
 
     --root-gradient: linear-gradient(to right ,var(--root-gradient-1), var(--root-gradient-2));
 

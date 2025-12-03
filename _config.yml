@@ -1,5 +1,5 @@
 
-title: Jonas Vonäsch ETHZ
+title: Jonas Vonäsch
 description: 
 
 theme: minima
@@ -7,14 +7,14 @@ theme: minima
 defaults:
   - scope:
       path: ""
-      #type: "pages"
     values:
-      nav: main
+      pagebar: main
       layout: page
   - scope:
       path: "teaching"
     values:
-      nav: teaching
+      pagebar: teaching
+      category_title: "Extra Material"
 
 plugins:
   - jekyll-feed

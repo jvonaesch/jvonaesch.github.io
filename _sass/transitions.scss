@@ -1,32 +1,32 @@
-:root {
-    --transition-time: 0.6s
-}
+@media (prefers-reduced-motion: no-preference) {
+    
+    :root {
+        --transition-time: 0.6s
+    }
 
+    .footer-block {
+        transition: background var(--transition-time);
+    }
 
-.footer-block {
-    transition: background var(--transition-time);
-}
+    .footer-block:hover {
+        background: var(--bg-section);
+    }
 
-.footer-block:hover {
-    background: var(--bg-section);
-}
+    .page-bar-link {
+        transition-duration: var(--transition-time);
+        transition-property: background, color;
+    }
 
+    .page-bar-link:hover {
+        background: var(--hover-bg);
+        color: var(--text);
+    }
 
-.page-bar-link {
-    transition-duration: var(--transition-time);
-    transition-property: background, color;
-}
+    a {
+        transition-duration: var(--transition-time);
+    }
 
-.page-bar-link:hover {
-    background: var(--hover-bg);
-    color: var(--text);
-}
-
-
-a {
-    transition-duration: var(--transition-time);
-}
-
-a:hover {
-    color: var(--hover-link);
+    a:hover {
+        color: var(--hover-link);
+    }
 }
