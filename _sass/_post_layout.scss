@@ -18,3 +18,25 @@ h1 {
 h2 {
     color: var(--title);
 }
+
+blockquote {
+    margin: 5px;
+    margin-left: 0;
+
+    padding: 1px;
+    padding-left: 20px;
+
+    border-width: 0;
+    border-left-width: 5px;
+    border-color: var(--primary);
+    border-style: solid;
+    border-radius: 10px;
+
+    font-weight: 500;
+
+    background: var(--bg-callout);
+
+    @media (prefers-color-scheme: dark) {
+        color: white;
+    }
+}
