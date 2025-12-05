@@ -29,4 +29,12 @@
     a:hover {
         color: var(--hover-link);
     }
+
+    blockquote {
+        transition-duration: var(--transition-time);
+    }
+
+    blockquote:hover {
+        border-left-width: 10px;
+    }
 }

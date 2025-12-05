@@ -51,45 +51,6 @@ body {
     text-align: left;
 }
 
-// Title
-.site-header {
-    padding: var(--border-width);
-
-    border-radius: var(--outer-radius);
-    background-image: var(--root-gradient);
-}
-
-.site-title-frame {
-    padding: var(--inner-pad);
-
-    border-radius: var(--inner-radius);
-    background: var(--bg-section);
-}
-
-.site-title {
-    margin: var(--inner-pad);
-
-    color: var(--title);
-}
-
-.page-bar {
-    padding: 5px;
-}
-
-.page-bar-link {
-    border-radius: var(--inner-pad);
-    padding: var(--inner-pad);
-    padding-left: 20px;
-    padding-right: 20px;
-
-    margin: 10px;
-    margin-top: 0;
-
-    background-color: var(--bg-base);
-    color: var(--link);
-    border-width: 0;
-}
-
 // Sidebar
 .sidebar {
     height: 100%;
