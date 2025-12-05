@@ -1,15 +1,11 @@
 {% assign pages = site.data.pages[page.pagebar] %}
 
 {% if pages.size > 1 %}
-<div class="page-bar">
-
   {% for page in pages%}
     {% if page.url %}
       <button class="page-bar-link", onclick="location.href='{{ page.url | relative_url }}'">
-        &nbsp;{{ page.title }}&nbsp;
+        {{ page.title }}
       </button>
     {% endif %}
   {% endfor %}
-  
-</div>
 {% endif %}

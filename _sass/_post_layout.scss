@@ -28,7 +28,7 @@ blockquote {
 
     border-width: 0;
     border-left-width: 5px;
-    border-color: var(--primary);
+    border-color: var(--border-callout);
     border-style: solid;
     border-radius: 10px;
 
@@ -39,4 +39,9 @@ blockquote {
     @media (prefers-color-scheme: dark) {
         color: white;
     }
+}
+
+.info {
+    border-color: var(--border-info);
+    background: var(--bg-info);
 }
