@@ -23,10 +23,3 @@ public static void main(String[] args) {
 }
 ```
 
-<div class="code-block" id="my-text" onclick="copyTextOnClick('my-text')" style="cursor:pointer;"><code>
-    Code goes here
-        adfs
-            a:
-        ask
-</code></div>
-
