@@ -17,3 +17,9 @@ Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor
 {: .info}
 > Info block
 
+```
+public static void main(String[] args) {
+    System.out.println("Hello, world!");
+}
+```
+

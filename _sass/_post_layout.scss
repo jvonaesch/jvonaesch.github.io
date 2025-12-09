@@ -19,7 +19,7 @@ h2 {
     color: var(--title);
 }
 
-blockquote {
+blockquote, .language-plaintext {
     margin: 5px;
     margin-left: 0;
 
@@ -44,4 +44,9 @@ blockquote {
 .info {
     border-color: var(--border-info);
     background: var(--bg-info);
+}
+
+.language-plaintext {
+    border-color: var(--border-code);
+    background: var(--bg-code);
 }
