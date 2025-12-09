@@ -2,13 +2,14 @@
     color: var(--code);
 }
 
-.highlight .nc { font-weight: 600; }
+.highlight .nc { font-weight: bolder; }
+.highlight .kt { font-weight: bolder; }
 
 @media (prefers-color-scheme: light) {
   .highlight .k, 
   .highlight .kn, 
   .highlight .kd, 
-  .highlight .kt { color: #aa4100; } // Keywords
+  .highlight .kt { color: #f24d00; } // Keywords
   .highlight .c { color: #93a1a1; font-style: italic; }
   .highlight .s { color: #2aa198; }
   .highlight .n { color: #657b83; }
@@ -19,7 +20,7 @@
   .highlight .t { color: #b58900; }
   .highlight .f, 
   .highlight .nc, 
-  .highlight .v { color: #9d0051; }
+  .highlight .v { color: #ff0084; }
 }
 
 
