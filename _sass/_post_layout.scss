@@ -50,3 +50,7 @@ blockquote, .code-block {
     border-color: var(--border-code);
     background: var(--bg-code);
 }
+
+.highlight {
+    overflow-x: auto;
+}
