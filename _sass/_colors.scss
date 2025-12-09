@@ -7,7 +7,7 @@
         --hover-bg: #ff7050;
 
         --text: #151515;
-        --title: #4400bb;
+        --title: #3c3c3c;
         --primary: #ff7b00;
         --secondary: #ff41a0;
         --highlight: #7affc8;
@@ -26,10 +26,12 @@
     }
 
     @media (prefers-color-scheme: dark) {
-        --bg-base: #2f2f2f;
-        --bg-section: #202020;
+        //--bg-base: #2f2f2f;
+        //--bg-section: #464646;
+        --bg-section: #2f2f2f;
+        --bg-base: #3c3c3c;
         --bg-accent: #383838;
-        --hover-bg: #bf0039;
+        --hover-bg: #de5b2b;
 
         --border-callout: var(--primary);
         --bg-callout: #7c3400;
@@ -39,13 +41,13 @@
         --bg-code: var(--bg-base);
 
         --text: #EEEEEE;
-        --title: #ff41a0;
+        --title: #ffffff;
         --primary: #ff7b00;
         --secondary: #ff41a0;
         --highlight: #fff;
         --hover-link: #ff7a78;
 
-        --code: #bfbfbf;
+        --code: #dddddd;
         --link: #c4c4c4;
         --visited: #9f9f9f;
     }
