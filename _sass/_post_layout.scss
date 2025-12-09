@@ -19,7 +19,7 @@ h2 {
     color: var(--title);
 }
 
-blockquote, .code-block {
+blockquote, [class^="language-"] {
     margin: 5px;
     margin-left: 0;
 
@@ -47,7 +47,7 @@ blockquote, .code-block {
     background: var(--bg-info);
 }
 
-.code-block {
+[class^="language-"] {
     border-color: var(--border-code);
     background: var(--bg-code);
 }

@@ -1,29 +1,35 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    document.body.addEventListener('click', async e => {
-        const el = e.target.closest('.copy-on-click');
-        if (!el) return;
-
-        const text = el.innerText;
-
-        try {
-            await navigator.clipboard.writeText(text);
-            el.dataset.copied = 'true';
-            setTimeout(() => delete el.dataset.copied, 700);
-
-        } catch (err) {
-            console.error('Copy failed:', err);
-        }
+    document.querySelectorAll('[class^="language-"]').forEach(div => {
+        div.classList.add('copyable');
+        div.classList.add('code-block');
     });
 
-    document.querySelectorAll('.highlighter-rouge').forEach(elem => {
-        elem.classList.add('copy-on-click');
-        elem.classList.add('code-block');
+    const copyableDivs = document.querySelectorAll('.copyable');
+    copyableDivs.forEach(div => {
+
+        const button = document.createElement('button');
+        button.textContent = 'Copy';
+        button.className = 'copy-button';
+        button.setAttribute('title', "copy code to clipboard")
+
+        div.style.position = 'relative';
+        div.appendChild(button);
+
+        button.addEventListener('click', async () => {
+            try {
+                const codeEl = div.querySelector('code');
+                const textToCopy = codeEl ? codeEl.innerText : div.innerText;
+                await navigator.clipboard.writeText(textToCopy);
+                div.dataset.copied = 'true';
+                setTimeout(() => delete div.dataset.copied, 1000);
+            } catch (err) {
+                console.error('Failed to copy: ', err);
+            }
+        });
     });
 
-    document.querySelectorAll('.copy-on-click').forEach(elem => {
-        elem.setAttribute('title', "copy to clipboard");
-    })
+
 });
 

@@ -16,7 +16,7 @@
     }*/
 }
 
-.copy-on-click[data-copied] {
+.copyable[data-copied] {
   animation: copiedFlash 1s forwards;
 }
 

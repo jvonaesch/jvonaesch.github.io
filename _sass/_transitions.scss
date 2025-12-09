@@ -37,11 +37,15 @@
         color: var(--hover-link);
     }
 
-    .copy-on-click {
+    .copyable {
         transition-duration: var(--transition-time);
     }
 
-    .copy-on-click:hover {
-        border-left-width: 10px;
+    .copyable {
+        //border-left-width: 10px;
+    }
+
+    .copy-button {
+        transition-duration: var(--transition-time);
     }
 }

@@ -41,3 +41,27 @@
   .highlight .nc, 
   .highlight .v { color: #de0772; }
 }
+
+.copyable {
+    position: relative;
+}
+
+.copy-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+
+    background-color: var(--bg-section);
+    color: var(--link);
+    border: none;
+
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.copy-button:hover {
+    background-color: var(--bg-accent);
+}
