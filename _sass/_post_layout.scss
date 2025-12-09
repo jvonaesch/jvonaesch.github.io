@@ -29,13 +29,13 @@ blockquote, [class^="language-"] {
 
     border-width: 0;
     border-left-width: 5px;
-    border-color: var(--border-callout);
+    border-color: var(--border-info);
     border-style: solid;
     border-radius: 10px;
 
     font-weight: 500;
 
-    background: var(--bg-callout);
+    background: var(--bg-info);
 
     @media (prefers-color-scheme: dark) {
         color: white;
@@ -45,6 +45,11 @@ blockquote, [class^="language-"] {
 .info {
     border-color: var(--border-info);
     background: var(--bg-info);
+}
+
+.extra {
+    border-color: var(--border-extra);
+    background: var(--bg-extra);
 }
 
 [class^="language-"] {
