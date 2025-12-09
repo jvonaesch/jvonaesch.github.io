@@ -32,11 +32,11 @@
         color: var(--hover-link);
     }
 
-    blockquote, .language-plaintext {
+    blockquote, .code-block {
         transition-duration: var(--transition-time);
     }
 
-    blockquote:hover, .language-plaintext:hover {
+    blockquote:hover, .code-block:hover {
         border-left-width: 10px;
     }
 }
