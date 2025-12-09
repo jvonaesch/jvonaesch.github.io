@@ -24,6 +24,11 @@
         color: var(--text);
     }
 
+    .gray:hover {
+        background: var(--bg-section);
+        color: var(--link);
+    }
+
     a {
         transition-duration: var(--transition-time);
     }

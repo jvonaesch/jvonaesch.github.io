@@ -2,7 +2,11 @@
 
 {% if pages.size > 1 %}
   {% for page in pages%}
-    {% if page.url %}
+    {% if page.gray %}
+      <button class="page-bar-link gray", onclick="location.href='{{ page.url | relative_url }}'">
+        {{ page.title }}
+      </button>
+    {% else %}
       <button class="page-bar-link", onclick="location.href='{{ page.url | relative_url }}'">
         {{ page.title }}
       </button>
