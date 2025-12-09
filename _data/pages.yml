@@ -5,7 +5,7 @@ main:
     url: /teaching/
 
 teaching:
-  - title: "About"
-    url: /
-  #- title: "Teaching"
-  #  url: /teaching/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Coding"
+    url: /teaching/coding.html

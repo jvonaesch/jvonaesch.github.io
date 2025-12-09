@@ -7,8 +7,20 @@
     }
 
     @keyframes scroll-watcher {
+        from {
+            background-color: black;
+        }
         to {
-            max-height: 0;
+            background-color: white;
         }
     }*/
+}
+
+.copy-on-click[data-copied] {
+  animation: copiedFlash 1s forwards;
+}
+
+@keyframes copiedFlash {
+  from   { background-color: var(--bg-accent); }
+  //100% { background-color: transparent; }
 }

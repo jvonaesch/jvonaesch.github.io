@@ -32,11 +32,11 @@
         color: var(--hover-link);
     }
 
-    .highlighter-rouge {
+    .copy-on-click {
         transition-duration: var(--transition-time);
     }
 
-    .highlighter-rouge:hover {
+    .copy-on-click:hover {
         border-left-width: 10px;
     }
 }

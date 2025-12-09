@@ -19,7 +19,7 @@ h2 {
     color: var(--title);
 }
 
-blockquote, .highlighter-rouge {
+blockquote, .code-block {
     margin: 5px;
     margin-left: 0;
 
@@ -46,7 +46,7 @@ blockquote, .highlighter-rouge {
     background: var(--bg-info);
 }
 
-.highlighter-rouge {
+.code-block {
     border-color: var(--border-code);
     background: var(--bg-code);
 }
