@@ -16,11 +16,10 @@
     }*/
 }
 
-.copyable[data-copied] {
+.copyable-block[data-copied] {
   animation: copiedFlash 1s forwards;
 }
 
 @keyframes copiedFlash {
   from   { background-color: var(--bg-accent); }
-  //100% { background-color: transparent; }
 }

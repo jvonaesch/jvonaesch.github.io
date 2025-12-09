@@ -37,12 +37,8 @@
         color: var(--hover-link);
     }
 
-    .copyable {
+    .copyable-block {
         transition-duration: var(--transition-time);
-    }
-
-    .copyable {
-        //border-left-width: 10px;
     }
 
     .copy-button {

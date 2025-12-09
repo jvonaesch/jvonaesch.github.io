@@ -42,8 +42,9 @@
   .highlight .v { color: #de0772; }
 }
 
-.copyable {
+.copyable-block {
     position: relative;
+    cursor: text;
 }
 
 .copy-button {
@@ -53,13 +54,15 @@
     z-index: 10;
 
     background-color: var(--bg-section);
-    color: var(--link);
+    color: var(--border-code);
     border: none;
 
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
+
     font-size: 14px;
+    font-weight: bold;
 }
 
 .copy-button:hover {

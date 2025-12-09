@@ -2,11 +2,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('[class^="language-"]').forEach(div => {
-        div.classList.add('copyable');
+        div.classList.add('copyable-block');
         div.classList.add('code-block');
     });
 
-    const copyableDivs = document.querySelectorAll('.copyable');
+    const copyableDivs = document.querySelectorAll('.copyable-block');
     copyableDivs.forEach(div => {
 
         const button = document.createElement('button');
