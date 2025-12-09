@@ -14,7 +14,7 @@ defaults:
       path: "teaching"
     values:
       pagebar: teaching
-      category_title: "Teaching Material"
+      category_title: "Lernmaterial"
 
 plugins:
   - jekyll-feed
