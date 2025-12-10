@@ -1,5 +1,5 @@
 ---
-title: Lernmaterial
+title: Slides
 ---
 Hier findet Ihr die Slides der Übungsstunden jeder Woche:
 - [Week 1](/resources/teaching/slides/week_1.pdf)

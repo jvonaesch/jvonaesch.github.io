@@ -1,5 +1,5 @@
 ---
-title: Standard-Template
+title: Coding Template
 ---
 
 Erfahrungsgemäss werdet Ihr während des Semesters regelmässig Übungen mit einem Codeskelett erhalten, das etwas unpraktisch zu bedienen ist. Im Folgenden findet Ihr eine überarbeitete Version dieses Skeletts, die Euch das Testen erleichtern soll. 
@@ -24,6 +24,8 @@ class Main {
   }
 
   public static void testCase() {
+
+    // TODO: implement
     
     Out.println("NULL");
 

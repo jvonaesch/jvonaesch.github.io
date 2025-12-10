@@ -1,25 +1,12 @@
 ---
 title: About
 ---
-THIS WEBSITE IS WORK IN PROGRESS!!!
+This website is a work in progress!
 
-Lorem ipsum dolor sit amet:
-
-- [Teaching](teaching)
-- [Contact](contact)
-- [Document](/resources/documents/loremipsum.pdf)
-
-Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I study computer science in the 3rd semester at ETH Zürich. This website is a placeholder that will hold teaching materials in a few months' time. These will be found on the [teaching](teaching) page.
 
 {: .extra }
-> Hello
+> I'm currently still working on making the site layout easily readable and fully functional. The full source code is openly available on my GitHub. _Don't_ look at it if you dislike hacky design. Feel free, however, to [file an issue](https://github.com/jvonaesch/jvonaesch.github.io/issues) in case you spot any errors or you have any ideas to improve this website. 
 
-> moin
-> meister
-
-```java
-public static void main(String[] args) {
-    System.out.println("Hello, world!");
-}
-```
+For personal feedback, fill out my [feedback form](https://docs.google.com/forms/d/e/1FAIpQLSf0xiHTyOEuOoCnxpJ1EfbZlo53_1aSt-a0Igix6SHL32lGuA/viewform?usp=dialog) instead. 
 
