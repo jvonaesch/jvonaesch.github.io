@@ -2,7 +2,7 @@
 title: Standard-Template
 ---
 
-Erfahrungsgemäss werdet Ihr während des Semesters regelmässig Übungen mit einem Codeskelett erhalten, dass etwas unpraktisch zu bedienen sein kann. Im folgenden findet Ihr eine überarbeitete Variante dieses Skeletts, die Euch das Testen erleichtern soll. 
+Erfahrungsgemäss werdet Ihr während des Semesters regelmässig Übungen mit einem Codeskelett erhalten, das etwas unpraktisch zu bedienen ist. Im Folgenden findet Ihr eine überarbeitete Version dieses Skeletts, die Euch das Testen erleichtern soll. 
 
 ```java
 import algorithms.*;
