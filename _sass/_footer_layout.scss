@@ -3,34 +3,41 @@ footer {
     align-items: top;
     justify-items: left;
     flex-direction: row;
+    overflow-x: auto;
 
-    padding: var(--root-pad);
-    padding-top: 0;
+    padding: var(--inner-pad);
+    padding-right: 0;
     margin-top: var(--base-margin);
 
     border-radius: var(--border-radius);
     background: var(--bg-section);
 }
 
-.footer-block {
-    margin-top: var(--root-pad);
+.footer-stack {
     margin-right: var(--inner-pad);
+    margin-bottom: 0;
     border-radius: var(--border-radius);
+}
+
+.footer-block {
+    padding: var(--inner-pad);
+    margin-right: var(--inner-pad);
+    overflow-x: auto;
+
+    border-radius: var(--border-radius);
+    background-color: var(--bg-base);
 }
 
 .footer-button {
     padding: 15px 20px;
-    margin-right: var(--base-margin);
-    margin-top: var(--base-margin);
+    margin-right: var(--inner-pad);
+    margin-bottom: var(--inner-pad);
 
     border-radius: 50vh;
+    border-width: 0;
     background: var(--bg-base);
 }
 
 .footer-text {
     margin: 20px 20px;
-}
-
-.footer-padfree {
-    margin: 0;
 }
