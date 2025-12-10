@@ -9,6 +9,7 @@ defaults:
       path: ""
     values:
       pagebar: main
+      footnotes: main
       layout: page
   - scope:
       path: "teaching"

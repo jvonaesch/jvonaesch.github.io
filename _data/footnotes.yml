@@ -1,0 +1,10 @@
+main:
+  - items:
+    - title: "Impressum"
+      url: /impressum.html
+      hover: gray
+    - title: "About"
+      url: /
+      hover: gray
+  - title: "Teaching"
+    text: "Contact:<br>jvonaesch@student.ethz.ch"

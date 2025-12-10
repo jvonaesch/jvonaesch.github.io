@@ -5,28 +5,27 @@
         transition-duration: var(--transition-time);
     }
 
-    .footer-block {
-        transition: background var(--transition-time);
-        transition-property: background-color;
-    }
-
-    .footer-block:hover {
-        background: var(--bg-section);
-    }
-
     .page-bar-link {
         transition-duration: var(--transition-time);
         transition-property: background-color, color;
     }
 
-    .page-bar-link:hover {
+    .hover-color {
+        transition-duration: var(--transition-time);
+    }
+
+    .hover-color:hover {
         background: var(--hover-bg);
         color: var(--text);
     }
 
-    .gray:hover {
-        background: var(--bg-section);
-        color: var(--link);
+    .hover-gray {
+        transition-duration: var(--transition-time);
+    }
+
+    .hover-gray:hover {
+        background: var(--bg-accent);
+        color: var(--text);
     }
 
     a {

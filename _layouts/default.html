@@ -37,16 +37,36 @@
 
       <footer>
 
-        <div class="footer-block">
-          <p class="footer-text">Contact</p>
-        </div>
+        {% assign footnotes = site.data.footnotes[page.footnotes] %}
 
-        <div class="footer-block">
-          <p class="footer-text">Other</p>
-        </div>
+        {% for block in footnotes %}
+          <div class="footer-block">
+
+          {% if block.text %}
+            <p class="footer-text">{{block.text}}</p>
+          {% endif %}
+          
+          {% for note in block.items %}
+            {% assign footer-class = "footer-button" %}
+
+            {% if note.hover %}
+              {% assign footer-class = footer-class | append: " clickable hover-" | append: note.hover %}
+            {% endif %}
+
+            {% if note.url %}
+              <div class="{{footer-class}}" onclick="location.href='{{ note.url }}'">
+                <p class="footer-padfree">{{ note.text | default: note.title }}</p>
+              </div>
+            {% else %}
+              <div class="{{footer-class}}">
+                <p class="footer-padfree">{{ note.text | default: note.title }}</p>
+              </div>
+            {% endif %}
+          {% endfor %}
+          </div>
+        {% endfor %}
 
       </footer>
-
     </div>
   </body>
 </html>

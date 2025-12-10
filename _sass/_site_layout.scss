@@ -73,28 +73,6 @@ section {
     background: var(--bg-section);
 }
 
-// Footer
-footer {
-    display: flex;
-    align-items: top;
-    justify-items: left;
-    flex-direction: row;
-
-    padding: var(--base-margin);
-    margin-top: var(--base-margin);
-
-    border-radius: var(--border-radius);
-    background: var(--bg-section);
-}
-
-.footer-block {
-    padding: var(--root-pad);
-    margin-right: var(--base-margin);
-
-    border-radius: var(--border-radius);
-    background: var(--bg-base);
-}
-
-.footer-text {
-    margin: 0;
+.clickable {
+    cursor: pointer;
 }
