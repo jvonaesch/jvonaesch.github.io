@@ -35,7 +35,7 @@ footer {
 }
 
 .footer-button {
-    padding: 15px 20px;
+    padding: 10px 20px;
     margin-right: var(--inner-pad);
     margin-bottom: var(--inner-pad);
 
@@ -44,6 +44,8 @@ footer {
     background: var(--bg-section);
 
     width: max-content;
+
+    color: var(--link);
 }
 
 .footer-text {
