@@ -3,29 +3,35 @@ footer {
     align-items: top;
     justify-items: left;
     flex-direction: row;
-    overflow-x: auto;
+    //overflow-x: hidden;
 
     padding: var(--inner-pad);
-    padding-right: 0;
     margin-top: var(--base-margin);
 
     border-radius: var(--border-radius);
     background: var(--bg-section);
 }
 
-.footer-stack {
-    margin-right: var(--inner-pad);
-    margin-bottom: 0;
+.footer-frame {
+    display: flex;
+    flex-direction: row;
     border-radius: var(--border-radius);
+    min-width: 100%;
+    background-color: var(--bg-base);
+    overflow-x: auto;
+    justify-content: space-between;
 }
 
 .footer-block {
+    display: block;
+
     padding: var(--inner-pad);
     margin-right: var(--inner-pad);
-    overflow-x: auto;
 
     border-radius: var(--border-radius);
     background-color: var(--bg-base);
+
+    width: min-content;
 }
 
 .footer-button {
@@ -35,7 +41,9 @@ footer {
 
     border-radius: 50vh;
     border-width: 0;
-    background: var(--bg-base);
+    background: var(--bg-section);
+
+    width: max-content;
 }
 
 .footer-text {
