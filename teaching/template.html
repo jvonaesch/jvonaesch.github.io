@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lernmaterial</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=829fe51f7f2281db1495c98db7fea932fe4e2893">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <script src="/assets/js/copyable.js"></script>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <div class="site-header">
+        <div  class="site-title-frame">
+
+          <h1 class="site-title">Lernmaterial</h1>
+          
+          
+            
+
+<div class="page-bar">
+
+  <ul class="link-list">
+  
+    
+      <li><a href="/"><button>
+        About
+      </button></a></li>
+    
+  
+    
+      <li><a href="/teaching/"><button>
+        Teaching
+      </button></a></li>
+    
+  
+  </ul>
+
+</div>
+          
+
+        </div>
+      </div>
+
+      <section>
+
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Coding Template</h1>
+  </header>
+
+  <div class="post-content">
+    <p>Hier folgt ein code-sample:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">algorithms.*</span><span class="o">;</span>
+
+<span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    
+    <span class="nc">String</span> <span class="n">file</span> <span class="o">=</span> <span class="s">"sample"</span><span class="o">;</span> <span class="c1">// Wählen sie hier die test-datei</span>
+    
+    <span class="nc">In</span><span class="o">.</span><span class="na">open</span><span class="o">(</span><span class="s">"public/%s.in"</span><span class="o">.</span><span class="na">formatted</span><span class="o">(</span><span class="n">file</span><span class="o">));</span>
+    <span class="nc">Out</span><span class="o">.</span><span class="na">compareTo</span><span class="o">(</span><span class="s">"public/%s.out"</span><span class="o">.</span><span class="na">formatted</span><span class="o">(</span><span class="n">file</span><span class="o">));</span>
+    
+    <span class="kt">int</span> <span class="n">t</span> <span class="o">=</span> <span class="nc">In</span><span class="o">.</span><span class="na">readInt</span><span class="o">();</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">t</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+      <span class="n">testCase</span><span class="o">();</span>
+    <span class="o">}</span>
+    
+    <span class="nc">In</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">testCase</span><span class="o">()</span> <span class="o">{</span>
+
+    <span class="c1">// TODO: implement</span>
+    
+    <span class="nc">Out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"NULL"</span><span class="o">);</span>
+
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+  </div>
+
+</article>
+
+
+      </section>
+
+      <footer>
+
+        <div class="footer-frame">
+
+          <div class="footer-block">
+            <table>
+              <tr>
+                <td>GitHub:</td>
+                <td><a href="https://github.com/jvonaesch">https://github.com/jvonaesch</a></td>
+              </tr>
+              <tr>
+                <td style="min-width:100px">Contact:</td>
+                <td style="min-width:220px">jvonaesch@student.ethz.ch</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="footer-block">
+            <ul class="button-stack">
+              <li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0xiHTyOEuOoCnxpJ1EfbZlo53_1aSt-a0Igix6SHL32lGuA/viewform?usp=dialog"><button>
+                  Feedback form
+                </button></a></li>
+              <li><a href="https://github.com/jvonaesch/jvonaesch.github.io/issues"><button>
+                File an issue
+              </button></li></a>
+            </ul>
+          </div>
+
+        </div>
+
+      </footer>
+
+    </div>
+  </body>
+</html>
