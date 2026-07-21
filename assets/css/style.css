@@ -28,7 +28,7 @@ button { font-family: var(--font-family); font-size: var(--font-size); }
 
 .mono { font-family: "JetBrains Mono", "Cascadia Code", "Lucida Sans", "Courier New", monospace; }
 
-.site-title { font-family: var(--title-family); font-size: 36px; font-weight: 700; line-height: 1.15; }
+.site-title { font-family: var(--title-family); font-size: 38px; font-weight: 700; line-height: 1.15; }
 
 .post-title { color: var(--title); font-size: var(--h1-size); font-family: var(--title-family); margin: 0px; }
 
