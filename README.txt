@@ -1,0 +1,1 @@
+This repository serves the sole purpose of hosting my personal website. I develop it using the Jekyll framework with markdown and custom HTML and CSS.  
