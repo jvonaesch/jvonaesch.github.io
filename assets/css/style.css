@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metamorphous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 :root { display: flex; align-items: center; justify-content: center; min-width: 0; width: 100%; --inner-radius: 20px; --border-radius: 30px; --outer-radius: 45px; --border-width: 30px; --base-margin: 10px; --root-pad: 30px; --inner-pad: 15px; }
 @media only screen and (max-width: 800px) { :root body { flex-direction: row; } }
 
@@ -22,7 +24,7 @@ section { padding: var(--root-pad); margin-top: var(--base-margin); overflow-y: 
 
 .foot-block { --grad-1: var(--bg-base); --grad-2: var(--bg-base); --grad: linear-gradient(to top, var(--grad-1), var(--grad-2)); background: var(--grad); }
 
-:root { --font-family: Jost, sans-serif; --title-family: Syne, system-ui; --font-size: 16px; --title-font-size: 32px; font-family: var(--font-family); font-size: var(--font-size); }
+:root { --font-family: Jost, sans-serif; --title-family: Syne, system-ui; --font-size: 18px; --title-font-size: 36px; font-family: var(--font-family); font-size: var(--font-size); }
 
 button { font-family: var(--font-family); font-size: var(--font-size); }
 
@@ -63,7 +65,7 @@ blockquote, [class^="language-"] { margin: 5px; margin-left: 0; padding: 1px; pa
  @keyframes scroll-watcher { from { background-color: black; } to { background-color: white; } }*/ }
 .copyable-block[data-copied] { animation: copiedFlash 1s forwards; }
 
-@keyframes copiedFlash { 10% { background-color: var(--bg-accent); } }
+@keyframes copiedFlash { 1% { background-color: var(--bg-accent); } }
 @media (prefers-reduced-motion: no-preference) { :root { --transition-time: 0.6s; transition-duration: var(--transition-time); }
   .page-bar-link { transition-duration: var(--transition-time); transition-property: background-color, color; }
   .hover-color { transition-duration: var(--transition-time); }
@@ -94,12 +96,12 @@ blockquote, [class^="language-"] { margin: 5px; margin-left: 0; padding: 1px; pa
   .highlight .c { color: #586e75; font-style: italic; }
   .highlight .s { color: #2aa198; }
   .highlight .n { color: #839496; }
-  .highlight .m { color: #d33682; }
+  .highlight .m { color: #d33643; }
   .highlight .o { color: #6c71c4; }
   .highlight .p { color: #839496; }
   .highlight .err { color: #dc322f; background: #330000; }
   .highlight .t { color: #b58900; }
-  .highlight .f, .highlight .nc, .highlight .v { color: #de0772; } }
+  .highlight .f, .highlight .nc, .highlight .v { color: #d33643; } }
 .copyable-block { position: relative; cursor: text; }
 
 .copy-button { position: absolute; top: 15px; right: 15px; z-index: 10; background-color: var(--bg-section); color: var(--border-code); border: none; padding: 5px 10px; cursor: pointer; border-radius: 50vh; font-size: 14px; font-weight: bold; }
