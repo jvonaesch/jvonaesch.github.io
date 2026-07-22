@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Metamorphous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amarante&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root { display: flex; align-items: center; justify-content: center; min-width: 0; width: 100%; --inner-radius: 20px; --border-radius: 30px; --outer-radius: 45px; --border-width: 30px; --base-margin: 10px; --root-pad: 30px; --inner-pad: 15px; }
 @media only screen and (max-width: 800px) { :root body { flex-direction: row; } }
 
@@ -15,8 +18,8 @@ section { padding: var(--root-pad); margin-top: var(--base-margin); overflow-y: 
 .clickable, button { cursor: pointer; }
 
 :root { --root-gradient-1: var(--primary); --root-gradient-2: var(--secondary); --root-gradient: linear-gradient(to right ,var(--root-gradient-1), var(--root-gradient-2)); color: var(--text); background-color: var(--bg-base); }
-@media (prefers-color-scheme: light) { :root { --bg-section: #fef7f5; --bg-base: #f6ede8; --bg-accent: #e8e8e8; --bg-button: #fbf0eb; --hover-bg: #ffd9c6; --text: #003632; --title: #208f88; --primary: #f0f0f0; --secondary: #eeeeee; --highlight: #7affc8; --hover-link: #4400bb; --border-extra: #ff7b00; --bg-extra: #ffe7e1; --border-info: #007bff; --bg-info: #d1efff; --border-code: #b0b0b0; --bg-code: var(--bg-base); --link: #686868; --visited: #777777; --code: #5a5a5a; } }
-@media (prefers-color-scheme: dark) { :root { --bg-section: #07423e; --bg-base: #003632; --bg-accent: #0b4643; --bg-button: #064c4d; --hover-bg: #587475; --text: #f3efe2; --title: #ffc894; --primary: #073642; --secondary: #0b3a46; --highlight: #2aa198; --hover-link: #b58900; --border-extra: #cb4b16; --bg-extra: #3a2217; --border-info: #268bd2; --bg-info: #073042; --border-code: #586e75; --bg-code: #073642; --link: #e1e1e1; --visited: #e2e3ff; --code: #93a1a1; } }
+@media (prefers-color-scheme: light) { :root { --bg-section: #fef7f5; --bg-base: #f6ede8; --bg-accent: #f6ede8; --bg-button: var(--bg-accent); --hover-bg: #ffd9c6; --text: #07423e; --title: #208f88; --primary: #f0f0f0; --secondary: #eeeeee; --highlight: #7affc8; --hover-link: #4400bb; --border-extra: #ff7b00; --bg-extra: #ffe7e1; --border-info: #007bff; --bg-info: #d1efff; --border-code: #b0b0b0; --bg-code: var(--bg-base); --link: #686868; --visited: #777777; --code: #5a5a5a; } }
+@media (prefers-color-scheme: dark) { :root { --bg-section: #07423e; --bg-base: #003632; --bg-accent: #00544e; --bg-button: var(--bg-accent); --hover-bg: #587475; --text: #f3efe2; --title: #ffc894; --primary: #073642; --secondary: #0b3a46; --highlight: #2aa198; --hover-link: #b58900; --border-extra: #cb4b16; --bg-extra: #3a2217; --border-info: #268bd2; --bg-info: #073042; --border-code: #586e75; --bg-code: #073642; --link: #e1e1e1; --visited: #e2e3ff; --code: #93a1a1; } }
 
 :link { color: var(--link); }
 
@@ -24,23 +27,23 @@ section { padding: var(--root-pad); margin-top: var(--base-margin); overflow-y: 
 
 .foot-block { --grad-1: var(--bg-base); --grad-2: var(--bg-base); --grad: linear-gradient(to top, var(--grad-1), var(--grad-2)); background: var(--grad); }
 
-:root { --font-family: Jost, sans-serif; --title-family: Syne, system-ui; --fantasy-family: "Metamorphous", "Times New Roman", Georgia, serif; --font-size: 18px; --title-font-size: 36px; font-family: var(--font-family); font-size: var(--font-size); }
+:root { --font-family: Jost, sans-serif; --title-family: "Quantico", system-ui; --fantasy-family: "Metamorphous", "Times New Roman", Georgia, serif; --font-size: 18px; --title-font-size: 36px; --title-letter-spacing: 0.0vw; font-family: var(--font-family); font-size: var(--font-size); }
 
-.fantasy { --title-family: var(--fantasy-family); }
+.fantasy { --title-family: var(--fantasy-family); --title-letter-spacing: 0; }
 
 button { font-family: var(--font-family); font-size: var(--font-size); }
 
 .mono { font-family: "JetBrains Mono", "Cascadia Code", "Lucida Sans", "Courier New", monospace; }
 
-.site-title { font-family: var(--title-family); font-size: 38px; font-weight: 700; line-height: 1.15; }
+.site-title { letter-spacing: var(--title-letter-spacing); font-family: var(--title-family); font-size: 38px; font-weight: 700; line-height: 1.15; }
 
-.post-title { color: var(--title); font-size: var(--h1-size); font-family: var(--title-family); margin: 0px; }
+.post-title { color: var(--title); letter-spacing: var(--title-letter-spacing); font-size: var(--h1-size); font-family: var(--title-family); margin: 0px; }
 
-h1 { color: var(--title); font-size: var(--h1-size); font-family: var(--title-family); }
+h1 { color: var(--title); letter-spacing: var(--title-letter-spacing); font-size: var(--h1-size); font-family: var(--title-family); }
 
-h2 { color: var(--title); font-family: var(--title-family); }
+h2 { color: var(--title); letter-spacing: var(--title-letter-spacing); font-family: var(--title-family); }
 
-:root { --h1-size: 30px; }
+:root { --h1-size: 30px; --separator-margin: 36px; }
 
 blockquote, [class^="language-"] { margin: 5px; margin-left: 0; padding: 1px; padding-left: 20px; padding-right: 20px; border-width: 0; border-left-width: 5px; border-color: var(--border-info); border-style: solid; border-radius: 10px; font-weight: 500; background: var(--bg-info); }
 @media (prefers-color-scheme: dark) { blockquote, [class^="language-"] { color: white; } }
@@ -52,6 +55,8 @@ blockquote, [class^="language-"] { margin: 5px; margin-left: 0; padding: 1px; pa
 [class^="language-"] { border-color: var(--border-code); background: var(--bg-code); }
 
 .highlight { overflow-x: auto; }
+
+hr { color: var(--bg-accent); background-color: var(--bg-accent); width: 70%; height: 2.5px; border-style: solid; margin-top: var(--separator-margin); margin-bottom: var(--separator-margin); }
 
 .site-header { border-radius: var(--outer-radius); background-image: var(--root-gradient); }
 
