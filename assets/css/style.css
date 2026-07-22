@@ -45,7 +45,7 @@ h1 { font-size: var(--h1-size); }
 
 :root { --h1-size: 30px; --separator-margin: 36px; }
 
-blockquote, [class^="language-"] { margin: 5px; margin-left: 0; padding: 1px; padding-left: 20px; padding-right: 20px; border-width: 0px; border-left-width: 5px; border-color: var(--border-info); border-style: solid; border-radius: 10px; background: var(--bg-info); }
+blockquote, [class^="language-"] { margin: 5px; margin-left: 0; margin-right: 0; padding: 1px; padding-left: 20px; padding-right: 20px; border-width: 0px; border-left-width: 5px; border-color: var(--border-info); border-style: solid; border-radius: 10px; background: var(--bg-info); }
 
 .info { border-color: var(--border-info); background: var(--bg-info); }
 
@@ -116,7 +116,7 @@ hr { background-color: var(--bg-accent); width: 70%; height: 3px; border-width: 
 
 .copy-button:hover { background-color: var(--bg-accent); }
 
-footer { display: flex; align-items: top; justify-items: left; flex-direction: row; padding: var(--inner-pad); margin-top: var(--base-margin); border-radius: var(--border-radius); background: var(--bg-section); }
+footer { display: flex; align-items: top; justify-items: left; flex-direction: row; padding: var(--inner-pad); border-radius: var(--border-radius); background: var(--bg-section); }
 
 .footer-frame { display: flex; flex-direction: row; border-radius: var(--inner-radius); min-width: 100%; background-color: var(--bg-base); overflow-x: auto; justify-content: space-between; }
 
@@ -138,4 +138,4 @@ button { background-color: var(--bg-button); color: var(--link); border-radius: 
 
 .link-list, .button-stack { list-style: none; padding: 0; margin: 0; }
 
-.video-embed { aspect-ratio: 16 / 9; border-radius: 20px; border-style: solid; border-width: 5px; color: var(--bg-accent); margin-top: 20px; width: 49%; min-width: 300px; margin-right: 2%; }
+.video-embed { aspect-ratio: 16 / 9; border-radius: 20px; border-style: solid; border-width: 5px; color: var(--bg-accent); margin-top: 20px; width: 100%; max-width: 500px; margin-right: 2%; }
