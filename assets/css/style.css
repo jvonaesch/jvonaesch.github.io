@@ -92,9 +92,9 @@ hr { background-color: var(--bg-accent); width: 70%; height: 3px; border-width: 
 
 .theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 44px; min-width: 44px; height: 44px; padding: 0; flex: 0 0 auto; }
 
-.theme-toggle__icon { display: none; font-size: 1.2rem; line-height: 1; }
+.theme-toggle__icon { display: none; width: 18px; height: 18px; fill: currentColor; }
 
-:root[data-theme="light"] .theme-toggle__icon--moon { display: inline-flex; margin-right: 3px; }
+:root[data-theme="light"] .theme-toggle__icon--moon { display: inline-flex; }
 
 :root[data-theme="dark"] .theme-toggle__icon--sun { display: inline-flex; }
 

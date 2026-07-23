@@ -7,7 +7,7 @@
 
     <title>Jonas Vonäsch</title>
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=3a647a4767d854a42a6f290f52afcbc2ccc6881b">
+    <link rel="stylesheet" href="/assets/css/style.css?v=c767a6c6851cdb3943e19dd429d0b5689636d2fc">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
     <script src="/assets/js/copyable.js"></script>
@@ -30,8 +30,12 @@
 
 <div class="page-bar">
   <button class="theme-toggle" type="button" onclick="ThemeToggle.toggle(this)" aria-pressed="false" aria-label="Toggle color scheme" title="Toggle color scheme">
-    <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>
-    <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀</span>
+    <svg class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="18" height="18">
+      <use href="/assets/icons/theme-toggle.svg#moon"></use>
+    </svg>
+    <svg class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="18" height="18">
+      <use href="/assets/icons/theme-toggle.svg#sun"></use>
+    </svg>
   </button>
 
 
