@@ -15,6 +15,7 @@
 
     // set data-theme
     const applyTheme = (theme) => {
+        
         root.dataset.theme = theme;
         root.style.colorScheme = theme;
     };
