@@ -6,34 +6,31 @@ document.addEventListener('DOMContentLoaded', () => {
         div.classList.add('code-block');
     });
 
-    const copyableDivs = document.querySelectorAll('.copyable-block');
-    copyableDivs.forEach(div => {
+    fetch('/assets/html/copy-button.html')
+        .then(response => response.text())
+        .then(html => {
+            const template = document.createElement('template');
+            template.innerHTML = html.trim();
 
-        const button = document.createElement('button');
-        button.textContent = 'Copy';
-        button.className = 'copy-button';
-        button.setAttribute('title', "copy code to clipboard")
+            document.querySelectorAll('.copyable-block').forEach(copyable => {
+                const button = template.content.firstElementChild.cloneNode(true);
+                
+                button.addEventListener('click', async () => {
+                    try {
+                        const codeEl = copyable.querySelector('code');
+                        const textToCopy = codeEl ? codeEl.innerText : copyable.innerText;
+                        await navigator.clipboard.writeText(textToCopy);
 
-        div.style.position = 'relative';
-        div.appendChild(button);
+                        button.classList.add('is-copied');
 
-        button.addEventListener('click', async () => {
-            try {
-                const codeEl = div.querySelector('code');
-                const textToCopy = codeEl ? codeEl.innerText : div.innerText;
-                await navigator.clipboard.writeText(textToCopy);
+                        setTimeout(() => button.classList.remove('is-copied'), 2000);
+                    } catch (err) {
+                        console.error('Failed to copy: ', err);
+                    }
+                });
 
-                div.dataset.copied = 'true';
-                button.textContent = 'Copied'
-                setTimeout(() => delete div.dataset.copied, 1000);
-                setTimeout(() => button.textContent = "Copy", 2000);
-
-            } catch (err) {
-                console.error('Failed to copy: ', err);
-            }
+                copyable.appendChild(button);
+            });
         });
-    });
-
-
 });
 
