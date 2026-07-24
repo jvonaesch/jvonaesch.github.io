@@ -180,7 +180,7 @@ footer { margin: auto; margin-bottom: 0; width: calc(100% - (var(--base-margin) 
 
 .path-bar__nav { width: 100%; padding: var(--root-pad); padding-top: var(--top-pad); border-radius: var(--border-radius) var(--border-radius) 0 0; background: var(--bg-section); }
 
-.path-bar { display: flex; flex-direction: row; align-items: center; justify-content: left; max-width: var(--max-page-width); font-size: var(--path-bar-font-size); font-family: var(--font-family); font-weight: 600; border-width: 0px; border-style: solid; border-color: var(--bg-accent); border-bottom-width: var(--separator-width); }
+.path-bar { display: flex; flex-direction: row; align-items: center; justify-content: left; max-width: var(--max-page-width); font-size: var(--path-bar-font-size); font-family: var(--font-family); font-weight: 600; border-width: 0px; border-style: solid; border-color: var(--bg-base); border-bottom-width: var(--separator-width); }
 @media (prefers-reduced-motion: no-preference) { .path-bar { transition-property: border-width; transition-duration: 0.2s; transition-timing-function: ease-in-out; } }
 
 .path-bar-pinned { --separator-width: 5px; --top-pad: var(--root-pad); position: fixed; top: 0; z-index: 1000; width: calc(100% - 2*var(--base-margin)); box-shadow: 0 var(--base-margin) 0 0 var(--bg-section); padding-top: var(--base-margin); background: var(--bg-base); }
