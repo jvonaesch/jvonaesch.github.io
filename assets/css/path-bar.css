@@ -1,0 +1,65 @@
+
+.path-bar-frame {
+    margin-bottom: 0;
+}
+
+.path-bar__nav {
+    width: 100%;
+
+    padding: var(--root-pad);
+    padding-top: 0;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+
+    background: var(--bg-section);
+}
+
+.path-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+
+    font-size: var(--path-bar-font-size);
+    font-family: var(--font-family);
+    font-weight: 600;
+
+    border-width: 0px;
+    border-style: solid;
+    border-color: var(--bg-accent);
+
+    @media (prefers-reduced-motion: no-preference) {
+        transition-property: border-width;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+    }
+}
+
+.path-bar-pinned {
+    position: fixed;
+    top: 0;
+    left: var(--base-margin);
+    z-index: 1000;
+    width: calc(100% - 2*var(--base-margin));
+
+    border-bottom-width: 5px;
+    box-shadow: 0 5px 0 0 var(--bg-section);
+    padding-top: var(--base-margin);
+    background: var(--bg-base);
+}
+
+.path-bar__nav-pinned {
+    padding-top: var(--root-pad);
+}
+
+.path-bar__item, 
+.path-bar__item:visited, 
+.path-bar__item:active,
+.path-bar__separator {
+    text-decoration: none;
+    color: var(--subtle-text);
+}
+
+.path-bar__item:hover {
+    color: var(--hover-link);
+}
+

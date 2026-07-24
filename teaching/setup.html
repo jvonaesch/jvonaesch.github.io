@@ -7,11 +7,14 @@
 
     <title>Jonas Vonäsch</title>
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=3abfe628120dde70564f9ac334102774ebf8a329">
+    <link rel="stylesheet" href="/assets/css/style.css?v=f265f4edc8be9f6b97f546b4ee11eb86432a7f1f">
+    <link rel="stylesheet" href="/assets/css/path-bar.css?v=f265f4edc8be9f6b97f546b4ee11eb86432a7f1f">
+    
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
     <script src="/assets/js/copyable.js"></script>
     <script src="/assets/js/theme-toggle.js"></script>
+    <script src="/assets/js/path-bar-popout.js"></script>
   </head>
 
   <body>
@@ -60,44 +63,46 @@
 
         </div>
       </div>
+      
+      <div id="page-wrapper" class="page-wrapper">
+        
 
-      <section class="page-content">
-        
 
-
-<div class="path-bar">
-  <nav class="path-bar__nav" aria-label="Breadcrumb">
-    
-    
+<div class="path-bar-frame" id="path-bar-frame">
+  <div class="path-bar" id="path-bar">
+    <nav class="path-bar__nav" id="path-bar__nav" aria-label="Breadcrumb">
       
       
         
         
+          
+          
+          
+          
+          
+          
+          
+          <a class="path-bar__item" href="/teaching/">Lernmaterialien</a><span class="path-bar__separator"> / </span>
         
-        
-        
-        
-        
-        <a class="path-bar__item" href="/teaching/">Lernmaterialien</a><span class="path-bar__separator"> / </span>
       
-    
+        
+        
+          
+          
+          
+          
+          
+          
+          
+          <a class="path-bar__item path-bar__item--current" href="/teaching/setup/">Einrichtung</a><span class="path-bar__separator"> / </span>
+        
       
-      
-        
-        
-        
-        
-        
-        
-        
-        <a class="path-bar__item path-bar__item--current" href="/teaching/setup/">Einrichtung</a><span class="path-bar__separator"> / </span>
-      
-    
-  </nav>
+    </nav>
+  </div>
 </div>
 
-        
-        <article class="post">
+        <section id="page-content" class="page-content">  
+          <article class="post">
 
   <header class="post-header">
     <h1 class="post-title">Einrichtung</h1>
@@ -126,7 +131,8 @@ pip install notebook
 
 </article>
 
-      </section>
+        </section>
+      </div>
 
     </div>
       <footer>
@@ -147,7 +153,7 @@ pip install notebook
             </table>
 
             <p class="copyright">
-              Last updated 23.07.2026<br>
+              Last updated 24.07.2026<br>
               &copy; 2026 Jonas Vonäsch
             </p>
 
