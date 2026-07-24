@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Metamorphous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap");
@@ -9,8 +10,6 @@
 body { min-width: 0; width: 100%; height: 100%; margin: 0; display: flex; flex-direction: column; align-items: stretch; }
 
 .wrapper { max-width: var(--max-page-width); padding: 0px; width: calc(100% - (var(--base-margin) * 2)); margin: var(--base-margin) auto; align-items: stretch; display: flex; flex-direction: column; text-align: left; }
-
-.sidebar { height: 100%; margin: var(--base-margin); margin-right: 0; padding: var(--root-pad); border-radius: var(--border-radius); background: var(--bg-section); }
 
 section { padding: var(--root-pad); padding-top: 0px; overflow-y: hidden; border-radius: var(--border-radius); background: var(--bg-section); }
 
@@ -190,3 +189,17 @@ footer { margin: auto; margin-bottom: 0; width: calc(100% - (var(--base-margin) 
 .path-bar__item:hover { color: var(--hover-link); }
 
 #path-bar-separator { margin: 0 auto; border: none; }
+
+.page-bar { display: flex; align-items: center; gap: var(--inner-pad); flex-wrap: wrap; }
+
+.page-bar ul { display: flex; flex-wrap: wrap; gap: var(--inner-pad); }
+
+.page-bar ul li { list-style: none; }
+
+.theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 44px; min-width: 44px; height: 44px; padding: 0; flex: 0 0 auto; }
+
+.theme-toggle__icon { display: none; width: 18px; height: 18px; fill: currentColor; }
+
+:root[data-theme="light"] .theme-toggle__icon--moon { display: inline-flex; }
+
+:root[data-theme="dark"] .theme-toggle__icon--sun { display: inline-flex; }
