@@ -96,7 +96,7 @@
           
           
           
-          <a class="path-bar__item path-bar__item--current" href="/teaching/extra/">Zusatzmaterial</a>
+          <a class="path-bar__item path-bar__item--current" href="/teaching/code-sample/">Code-Beispiel</a>
           <span class="path-bar__separator">
             / 
           </span>
@@ -110,17 +110,26 @@
           <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Zusatzmaterial</h1>
+    <h1 class="post-title">Code-Beispiel</h1>
   </header>
 
   <div class="post-content">
-    <hr />
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 
-<blockquote class="subtle">
-  <h2 id="fourier">Fourier</h2>
-  <p>Seht euch gerne dieses Video von 3Blue1Brown an, der das Thema Fourier-Reihen intuitiv erklärt:</p>
-  <iframe class="video-embed" src="https://www.youtube.com/embed/r6sGWTCMz2k" title="But what is a fourier series?" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-</blockquote>
+<span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">g</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">linplot</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">30</span><span class="p">):</span>
+    <span class="n">pts</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+    <span class="n">xs</span><span class="p">,</span> <span class="n">ys</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">)</span>
+
+<span class="n">linplot</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="n">linplot</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
 
   </div>
 
