@@ -41,7 +41,7 @@ button { background-color: var(--bg-button); color: var(--link); border-radius: 
 
 .video-embed { aspect-ratio: 16 / 9; border-radius: 20px; border-style: solid; color: var(--bg-accent); margin-top: 0px; width: 100%; max-width: 500px; margin-right: 2%; }
 
-:root { --font-family: Jost, sans-serif; --title-family: "Quantico", system-ui; --fantasy-family: "Metamorphous", "Times New Roman", Georgia, serif; --font-size: 18px; --title-font-size: 36px; --title-letter-spacing: 0.0vw; --path-bar-font-size: 16px; font-family: var(--font-family); font-size: var(--font-size); }
+:root { --font-family: Jost, sans-serif; --title-family: "Quantico", system-ui; --fantasy-family: "Metamorphous", "Times New Roman", Georgia, serif; --font-size: 16px; --title-font-size: 36px; --title-letter-spacing: 0.0vw; --path-bar-font-size: 16px; font-family: var(--font-family); font-size: var(--font-size); }
 
 .fantasy { --title-family: var(--fantasy-family); --title-letter-spacing: 0; }
 
@@ -59,7 +59,7 @@ h1 { font-size: var(--h1-size); }
 
 :root { --h1-size: 30px; --separator-margin: 36px; }
 
-blockquote, [class^="language-"] { margin: 5px; margin-left: 0; margin-right: 0; padding: 1px; padding-left: 20px; padding-right: 20px; border-width: 0px; border-left-width: 5px; border-color: var(--border-info); border-style: solid; border-radius: 10px; background: var(--bg-info); }
+blockquote, [class^="language-"] { margin: 5px; margin-left: 0; margin-right: 0; padding: 1px 20px; border-width: 0px; border-left-width: 5px; border-color: var(--border-info); border-style: solid; border-radius: 10px; background: var(--bg-info); }
 
 .info { border-color: var(--border-info); background: var(--bg-info); }
 
@@ -163,12 +163,12 @@ footer { margin: auto; margin-bottom: 0; width: calc(100% - (var(--base-margin) 
 
 .path-bar-frame { margin-bottom: 0; --separator-width: 0; --top-pad: 0; --bottom-radius: 0; }
 
-.path-bar__nav { width: 100%; padding: var(--root-pad); padding-top: var(--top-pad); border-radius: var(--border-radius) var(--border-radius) var(--bottom-radius) var(--bottom-radius); background: var(--bg-section); }
+.path-bar__container { width: 100%; padding: var(--root-pad); padding-top: var(--top-pad); border-radius: var(--border-radius) var(--border-radius) var(--bottom-radius) var(--bottom-radius); background: var(--bg-section); }
 
-.path-bar { display: flex; flex-direction: row; align-items: center; justify-content: left; max-width: var(--max-page-width); font-size: var(--path-bar-font-size); font-family: var(--font-family); font-weight: 600; border-width: 0px; border-style: solid; border-color: var(--bg-base); border-bottom-width: var(--separator-width); border-radius: 0 0 var(--bottom-radius) var(--bottom-radius); }
+.path-bar { display: flex; flex-direction: row; align-items: center; justify-content: left; max-width: var(--max-page-width); font-size: var(--path-bar-font-size); font-family: var(--font-family); border-width: 0px; border-style: solid; border-color: var(--bg-base); border-bottom-width: var(--separator-width); border-radius: 0 0 var(--bottom-radius) var(--bottom-radius); }
 @media (prefers-reduced-motion: no-preference) { .path-bar { transition-property: border-width; transition-duration: 0.2s; transition-timing-function: ease-in-out; } }
 
-.path-bar-pinned { --separator-width: 5px; --top-pad: var(--root-pad); position: fixed; top: 0; z-index: 1000; width: calc(100% - 2*var(--base-margin)); box-shadow: 0 var(--separator-width) 0 0 var(--bg-section); padding-top: var(--base-margin); background: var(--bg-base); }
+.path-bar-pinned { --separator-width: 5px; --top-pad: var(--root-pad); position: fixed; top: 0; z-index: 1000; width: calc(100% - 2*var(--base-margin)); box-shadow: 0 5px 0 0 var(--bg-section); padding-top: var(--base-margin); background: var(--bg-base); }
 
 .path-bar__item, .path-bar__item:visited, .path-bar__item:active, .path-bar__separator { text-decoration: none; color: var(--subtle-text); }
 
