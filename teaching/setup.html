@@ -121,18 +121,40 @@
 <hr />
 
 <blockquote class="subtle">
-  <h2 id="jupyter-setup">Jupyter Setup</h2>
+  <h2 id="jupyter--ipython">Jupyter &amp; iPython</h2>
   <p>Ihr könnt Jupyter Notebook auf der <a href="https://jupyter.org/try-jupyter/lab/">Try Jupyter</a>-Seite kostenlos ausprobieren. 
 Ich empfehle euch allerdings, Notebook direkt auf Eurem System zu installieren.
 Dazu installiert Ihr zuerst Jupyter mit pip, dem Python-Paketmanager:</p>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>jupyterlab
-</code></pre></div>  </div>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>notebook
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>jupyter
 </code></pre></div>  </div>
   <p>Nun könnt Ihr Notebook mit folgendem Befehl ausführen:</p>
   <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter notebook
 </code></pre></div>  </div>
-  <p>Quelle: <a href="https://jupyter.org/install">https://jupyter.org/install</a></p>
+  <p>Das GUI findet Ihr danach auf <a href="http://localhost:8888/tree">http://localhost:8888/tree</a> in eurem browser.</p>
+
+  <p><em>(Quelle: <a href="https://jupyter.org/install">https://jupyter.org/install</a>)</em></p>
+
+  <p>Nachdem ihr Jupyter installiert habt, könnt ihr ebenfalls iPython nutzen mit:</p>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ipython
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote class="subtle">
+  <h2 id="wichtige-packages">Wichtige Packages</h2>
+
+  <p>Folgende Python-Packages werdet Ihr in den folgenden Wochen regelmässig gebrauchen:</p>
+
+  <ul>
+    <li>numpy</li>
+    <li>scipy</li>
+    <li>matplotlib</li>
+    <li>ipython / jupyter</li>
+    <li><em><a href="/teaching/code/sympy-example.html">sympy</a></em></li>
+  </ul>
+
+  <p>Jede dieser packages lässt sich installieren mit:</p>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> &lt;name des pakets&gt;
+</code></pre></div>  </div>
 </blockquote>
 
   </div>
@@ -161,7 +183,7 @@ Dazu installiert Ihr zuerst Jupyter mit pip, dem Python-Paketmanager:</p>
         </table>
 
         <p class="copyright">
-        Last updated 02.09.2026<br>
+        Last updated 07.09.2026<br>
         &copy; 2026 Jonas Vonäsch
         </p>
 

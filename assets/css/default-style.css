@@ -113,6 +113,8 @@ button:hover { background: var(--bg-accent); color: var(--title); }
 
 .video-embed { aspect-ratio: 16 / 9; border-radius: 20px; border-style: solid; color: var(--bg-accent); margin-top: 0px; width: 100%; max-width: 500px; margin-right: 2%; }
 
+.notebook-embed { width: 100%; height: 0; max-height: 900px; display: block; border-radius: var(--inner-radius); }
+
 :root { --font-family: Jost, sans-serif; --title-family: "Quantico", system-ui; --fantasy-family: "Metamorphous", "Times New Roman", Georgia, serif; --font-size: 16px; --title-font-size: 36px; --title-letter-spacing: 0.0vw; --path-bar-font-size: 16px; font-family: var(--font-family); font-size: var(--font-size); }
 
 .fantasy { --title-family: var(--fantasy-family); --title-letter-spacing: 0; }
@@ -131,7 +133,7 @@ h1 { font-size: var(--h1-size); }
 
 :root { --h1-size: 30px; --separator-margin: 36px; }
 
-blockquote, [class^="language-"] { margin: 5px; margin-left: 0; margin-right: 0; padding: 1px 20px; border-width: 0px; border-left-width: 5px; border-color: var(--border-info); border-style: solid; border-radius: 10px; background: var(--bg-info); }
+[class^="language-"], .info, .extra, .subtle { margin: 5px; margin-left: 0; margin-right: 0; padding: 1px 20px; border-width: 0px; border-left-width: 5px; border-color: var(--border-info); border-style: solid; border-radius: 10px; background: var(--bg-info); }
 
 .info { border-color: var(--border-info); background: var(--bg-info); }
 

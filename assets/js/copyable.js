@@ -1,10 +1,13 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    document.querySelectorAll('[class^="language-"]').forEach(div => {
+    const makeCopyable = (div => {
         div.classList.add('copyable-block');
         div.classList.add('code-block');
-    });
+    })
+
+    document.querySelectorAll('[class^="language-"]:not(p *)').forEach(makeCopyable);
+    document.querySelectorAll('jp-CodeCell').forEach(makeCopyable);
 
     fetch('/assets/html/copy-button.html')
         .then(response => response.text())

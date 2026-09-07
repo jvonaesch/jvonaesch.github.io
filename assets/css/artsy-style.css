@@ -57,6 +57,8 @@ button:hover { background: var(--bg-accent); color: var(--title); }
 
 .video-embed { aspect-ratio: 16 / 9; border-radius: 20px; border-style: solid; color: var(--bg-accent); margin-top: 0px; width: 100%; max-width: 500px; margin-right: 2%; }
 
+.notebook-embed { width: 100%; height: 0; max-height: 900px; display: block; border-radius: var(--inner-radius); }
+
 .site-header { border-radius: var(--outer-radius); background-image: var(--root-gradient); }
 
 .site-title-frame { padding: var(--inner-pad); overflow: hidden; border-radius: var(--inner-radius); background: var(--bg-section); }
