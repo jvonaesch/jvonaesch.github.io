@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     document.querySelectorAll('[class^="language-"]:not(p *)').forEach(makeCopyable);
-    document.querySelectorAll('jp-CodeCell').forEach(makeCopyable);
+    document.querySelectorAll('.cm-editor').forEach(makeCopyable);
 
     fetch('/assets/html/copy-button.html')
         .then(response => response.text())
