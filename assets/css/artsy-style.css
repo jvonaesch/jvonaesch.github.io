@@ -59,6 +59,18 @@ button:hover { background: var(--bg-accent); color: var(--title); }
 
 .notebook-embed { width: 100%; height: 0; max-height: 900px; display: block; border-radius: var(--inner-radius); }
 
+.spoiler__toggle { position: absolute; top: 20px; left: 15px; width: 18px; height: 18px; padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; }
+
+.spoiler__toggle::before { content: ""; display: block; width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); transition: transform 0.2s ease; }
+
+.spoiler.is-open .spoiler__toggle::before { transform: rotate(45deg); }
+
+.spoiler__content { display: none; }
+
+.spoiler.is-open .spoiler__content { display: block; }
+
+.spoiler__toggle:hover { background-color: transparent; color: var(--border-spoiler); }
+
 .site-header { border-radius: var(--outer-radius); background-image: var(--root-gradient); }
 
 .site-title-frame { padding: var(--inner-pad); overflow: hidden; border-radius: var(--inner-radius); background: var(--bg-section); }
