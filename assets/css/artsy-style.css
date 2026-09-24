@@ -59,7 +59,7 @@ button:hover { background: var(--bg-accent); color: var(--title); }
 
 .notebook-embed { width: 100%; height: 0; max-height: 900px; display: block; border-radius: var(--inner-radius); }
 
-.spoiler__toggle { position: absolute; top: 20px; left: 15px; width: 18px; height: 18px; padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; }
+.spoiler__toggle { position: absolute; top: 20px; left: 15px; width: 18px; height: var(--font-size); padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; }
 
 .spoiler__toggle::before { content: ""; display: block; width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); transition: transform 0.2s ease; }
 
