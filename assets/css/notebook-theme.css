@@ -1,0 +1,39 @@
+:root[data-site-theme="light"] {
+    --jp-layout-color0: #fbf4f1;
+    --jp-layout-color1: #f5efeb;
+    --jp-layout-color2: #e8e2de;
+    --jp-layout-color3: #ffffff;
+    --jp-content-font-color1: #07423e;
+    --jp-content-font-color2: #666666;
+    --jp-content-link-color: #208f88;
+    --jp-ui-font-color0: #07423e;
+    --jp-ui-font-color1: #07423e;
+    --jp-border-color1: #e8e2de;
+    --jp-border-color2: #f5efeb;
+    --jp-rendermime-table-row-background: #f5efeb;
+    --jp-rendermime-table-row-hover-background: #e8e2de;
+    --jp-cell-editor-background: #ffffff;
+    --jp-code-editor-background: #ffffff;
+    --jp-mirror-editor-variable-color: #5a5a5a;
+    --jp-cell-prompt-not-active-font-color: #666666;
+}
+
+:root[data-site-theme="dark"] {
+    --jp-layout-color0: #003632;
+    --jp-layout-color1: #07423e;
+    --jp-layout-color2: #00544e;
+    --jp-layout-color3: #00232b;
+    --jp-content-font-color1: #f3efe2;
+    --jp-content-font-color2: #cecece;
+    --jp-content-link-color: #ffc894;
+    --jp-ui-font-color0: #f3efe2;
+    --jp-ui-font-color1: #f3efe2;
+    --jp-border-color1: #00544e;
+    --jp-border-color2: #07423e;
+    --jp-rendermime-table-row-background: #07423e;
+    --jp-rendermime-table-row-hover-background: #00544e;
+    --jp-cell-editor-background: #00232b;
+    --jp-code-editor-background: #00232b;
+    --jp-mirror-editor-variable-color: #cbe2e2;
+    --jp-cell-prompt-not-active-font-color: #cecece;
+}

@@ -18,6 +18,7 @@
         
         root.dataset.theme = theme;
         root.style.colorScheme = theme;
+        window.dispatchEvent(new CustomEvent('site-theme-change', { detail: { theme } }));
     };
 
     // get data-theme
