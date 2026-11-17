@@ -37,7 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function onResize() {
+        if (element.classList.contains(pinnedClass)) {
+            fixPathBar();
+        }
+        onScroll();
+    }
+
     onScroll();
     window.addEventListener('scroll', onScroll);
-    window.addEventListener('resize', onScroll);
+    window.addEventListener('resize', onResize);
 });
