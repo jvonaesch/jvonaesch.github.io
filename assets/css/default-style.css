@@ -220,7 +220,9 @@ footer { margin: 0 auto; width: calc(100% - (var(--base-margin) * 2)); padding-b
 
 .sidebar-page__compact { display: none; }
 
-.sidebar-page__arrow { display: inline-flex; align-items: center; justify-content: center; color: var(--link); text-decoration: none; }
+.sidebar-page__arrow { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: var(--link); text-decoration: none; }
+
+.sidebar-page__arrow-icon { display: block; width: 18px; height: 18px; fill: none; stroke: currentColor; }
 
 .sidebar-page__arrow:visited { color: var(--link); }
 
@@ -228,7 +230,7 @@ footer { margin: 0 auto; width: calc(100% - (var(--base-margin) * 2)); padding-b
 
 .sidebar-page__arrow--disabled { visibility: hidden; }
 
-.sidebar-page__select { min-width: 0; width: 100%; border: 0; border-radius: 50vh; background: var(--bg-ui); color: var(--link); font: inherit; text-align: center; cursor: pointer; }
+.sidebar-page__select { min-width: 0; width: 100%; height: 44px; border: 0; border-radius: 50vh; background: var(--bg-ui); color: var(--link); font: inherit; text-align: center; cursor: pointer; }
 
 .sidebar-page__select:hover, .sidebar-page__select:focus { color: var(--title); }
 
@@ -242,7 +244,7 @@ footer { margin: 0 auto; width: calc(100% - (var(--base-margin) * 2)); padding-b
 
 .sidebar-layout .sidebar-page__section[hidden] { display: none; }
 
-@media (max-width: 700px) { .sidebar-layout .body-wrapper { grid-template-columns: 1fr; gap: var(--inner-pad); }
-  .sidebar-layout .sidebar-page__nav { position: static; }
-  .sidebar-layout .sidebar-page__compact { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: var(--inner-pad); padding: 0 var(--inner-pad); }
+@media (max-width: 700px) { .sidebar-layout .body-wrapper { grid-template-columns: 1fr; gap: var(--base-margin); }
+  .sidebar-layout .sidebar-page__nav { position: static; padding: 0; }
+  .sidebar-layout .sidebar-page__compact { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: var(--inner-pad); padding: 0; }
   .sidebar-layout .sidebar-page__list { display: none; } }
