@@ -85,7 +85,7 @@
   a:hover { color: var(--hover-link); }
   .copyable-block { transition-duration: var(--transition-time); }
   .copy-button { transition-duration: var(--transition-time); } }
-:root { display: flex; align-items: center; justify-content: center; min-width: 0; width: 100%; height: 100%; --inner-radius: 20px; --border-radius: 30px; --outer-radius: 45px; --border-width: 30px; --base-margin: 10px; --root-pad: 30px; --inner-pad: 15px; --max-page-width: 900px; }
+:root { display: flex; align-items: flex-start; justify-content: center; min-width: 0; width: 100%; height: 100%; --inner-radius: 20px; --border-radius: 30px; --outer-radius: 45px; --border-width: 30px; --base-margin: 10px; --root-pad: 30px; --inner-pad: 15px; --max-page-width: 900px; }
 
 body { min-width: 0; width: 100%; min-height: 100vh; margin: 0; display: flex; flex-direction: column; align-items: stretch; }
 
