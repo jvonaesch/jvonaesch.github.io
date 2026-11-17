@@ -214,9 +214,23 @@ footer { margin: 0 auto; width: calc(100% - (var(--base-margin) * 2)); padding-b
 
 .sidebar-layout .page-wrapper { margin-top: 0; }
 
-.sidebar-layout .sidebar-page__nav { position: sticky; top: var(--base-margin); align-self: start; box-sizing: border-box; max-height: calc(100vh - (var(--base-margin) * 2)); overflow-x: hidden; overflow-y: auto; padding: var(--inner-pad) 0; border-radius: var(--border-radius); background: var(--bg-ui); }
+.sidebar-layout .sidebar-page__nav { position: sticky; top: var(--base-margin); align-self: start; box-sizing: border-box; overflow-x: hidden; overflow-y: auto; padding: var(--inner-pad) 0; border-radius: var(--border-radius); background: var(--bg-ui); }
 
 .sidebar-layout .sidebar-page__list { list-style: none; padding: 0; margin: 0; }
+
+.sidebar-page__compact { display: none; }
+
+.sidebar-page__arrow { display: inline-flex; align-items: center; justify-content: center; color: var(--link); text-decoration: none; }
+
+.sidebar-page__arrow:visited { color: var(--link); }
+
+.sidebar-page__arrow:hover { color: var(--title); }
+
+.sidebar-page__arrow--disabled { visibility: hidden; }
+
+.sidebar-page__select { min-width: 0; width: 100%; border: 0; border-radius: 50vh; background: var(--bg-ui); color: var(--link); font: inherit; text-align: center; cursor: pointer; }
+
+.sidebar-page__select:hover, .sidebar-page__select:focus { color: var(--title); }
 
 .sidebar-layout .sidebar-page__list li + li { border-top: 2px solid var(--bg-base); padding-top: 2px; }
 
@@ -229,4 +243,6 @@ footer { margin: 0 auto; width: calc(100% - (var(--base-margin) * 2)); padding-b
 .sidebar-layout .sidebar-page__section[hidden] { display: none; }
 
 @media (max-width: 700px) { .sidebar-layout .body-wrapper { grid-template-columns: 1fr; gap: var(--inner-pad); }
-  .sidebar-layout .sidebar-page__nav { position: static; } }
+  .sidebar-layout .sidebar-page__nav { position: static; }
+  .sidebar-layout .sidebar-page__compact { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: var(--inner-pad); padding: 0 var(--inner-pad); }
+  .sidebar-layout .sidebar-page__list { display: none; } }
