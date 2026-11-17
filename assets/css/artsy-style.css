@@ -21,7 +21,7 @@ button { font-family: var(--font-family); font-size: var(--font-size); }
 
 h1 { font-size: var(--h1-size); }
 
-:root[data-theme="light"] { --bg-section: #ffffff; --bg-base: #ffffff; --bg-accent: #f1f1f1; --bg-button: var(--bg-base); --hover-bg: #ffffff; --text: #000000; --title: #f2467a; --primary: #ffffff; --secondary: #ffffff; --highlight: #fd6094; --hover-link: var(--title); --border-extra: #ff7b00; --bg-extra: #ffe7e1; --border-info: #007bff; --bg-info: #d1efff; --border-code: #e0e0e0; --bg-code: #ffffff; --subtle-text: #aaaaaa; --link: #666666; --visited: #777777; --code: #5a5a5a; color-scheme: light; color: var(--text); background-color: var(--bg-base); }
+:root[data-theme="light"] { --bg-ui: #ffffff; --bg-section: #ffffff; --bg-base: #ffffff; --bg-accent: #f1f1f1; --bg-button: var(--bg-base); --hover-bg: #ffffff; --text: #000000; --title: #f2467a; --primary: #ffffff; --secondary: #ffffff; --highlight: #fd6094; --hover-link: var(--title); --border-extra: #ff7b00; --bg-extra: #ffe7e1; --border-info: #007bff; --bg-info: #d1efff; --border-code: #e0e0e0; --bg-code: #ffffff; --subtle-text: #aaaaaa; --link: #666666; --visited: #777777; --code: #5a5a5a; color-scheme: light; color: var(--text); background-color: var(--bg-base); }
 
 :link { color: var(--link); }
 
@@ -35,9 +35,11 @@ body { min-width: 0; width: 100%; height: 100%; margin: 0; display: flex; flex-d
 
 .content-wrapper { max-width: var(--max-page-width); padding: 0px; width: calc(100% - (var(--base-margin) * 2)); margin: var(--base-margin) auto; align-items: stretch; display: flex; flex-direction: column; text-align: left; }
 
-section { padding: var(--root-pad); padding-top: 0px; overflow-y: hidden; border-radius: var(--border-radius); background: var(--bg-section); }
+section { margin: var(--base-margin); padding: var(--root-pad); padding-top: 0px; overflow-y: hidden; border-radius: var(--border-radius); background: var(--bg-section); }
 
-.page-wrapper { padding-top: var(--root-pad); margin-top: var(--base-margin); overflow-y: hidden; border-radius: var(--border-radius); background: var(--bg-section); }
+.page-wrapper { display: flex; flex-direction: column; padding-top: var(--root-pad); margin-top: var(--base-margin); overflow-y: hidden; border-radius: var(--border-radius); background: var(--bg-ui); }
+
+.page-wrapper > section { flex: 1; }
 
 .clickable { cursor: pointer; }
 
@@ -73,17 +75,17 @@ button:hover { background: var(--bg-accent); color: var(--title); }
 
 .site-header { border-radius: var(--outer-radius); background-image: var(--root-gradient); }
 
-.site-title-frame { padding: var(--inner-pad); overflow: hidden; border-radius: var(--inner-radius); background: var(--bg-section); }
+.site-title-frame { padding: var(--inner-pad); overflow: hidden; border-radius: var(--inner-radius); background: var(--bg-ui); }
 
 .site-title { margin: var(--inner-pad); color: var(--title); }
 
 footer { margin: auto; margin-bottom: 0; width: calc(100% - (var(--base-margin) * 2)); padding-bottom: var(--inner-pad); padding-top: var(--inner-pad); }
 
-.footer-frame { display: flex; flex-direction: row; border-radius: var(--inner-radius); min-width: 100%; background-color: var(--bg-base); overflow-x: auto; justify-content: space-between; }
+.footer-frame { display: flex; flex-direction: row; border-radius: var(--inner-radius); min-width: 100%; background-color: var(--bg-ui); overflow-x: auto; justify-content: space-between; }
 
-.footer-block { display: block; padding: var(--inner-pad); border-radius: var(--border-radius); background-color: var(--bg-base); }
+.footer-block { display: block; padding: var(--inner-pad); border-radius: var(--border-radius); background-color: var(--bg-ui); }
 
-.footer-block button:not(:hover) { background-color: var(--bg-section); color: var(--link); }
+.footer-block button:not(:hover) { background-color: var(--bg-ui); color: var(--link); }
 
 .footer-text { margin: 20px 20px; }
 
@@ -91,12 +93,12 @@ footer { margin: auto; margin-bottom: 0; width: calc(100% - (var(--base-margin) 
 
 .path-bar-frame { margin-bottom: 0; --separator-width: 0; --top-pad: 0; --bottom-radius: 0; }
 
-.path-bar__container { width: 100%; padding: var(--root-pad); padding-top: var(--top-pad); border-radius: var(--border-radius) var(--border-radius) var(--bottom-radius) var(--bottom-radius); background: var(--bg-section); }
+.path-bar__container { width: 100%; padding: var(--root-pad); padding-top: var(--top-pad); border-radius: var(--border-radius) var(--border-radius) var(--bottom-radius) var(--bottom-radius); background: var(--bg-ui); }
 
-.path-bar { display: flex; flex-direction: row; align-items: center; justify-content: left; max-width: var(--max-page-width); font-size: var(--path-bar-font-size); font-family: var(--font-family); border-width: 0px; border-style: solid; border-color: var(--bg-base); border-bottom-width: var(--separator-width); border-radius: 0 0 var(--bottom-radius) var(--bottom-radius); }
+.path-bar { display: flex; flex-direction: row; align-items: center; justify-content: left; max-width: var(--max-page-width); font-size: var(--path-bar-font-size); font-family: var(--font-family); border-width: 0px; border-style: solid; border-color: var(--bg-ui); border-bottom-width: var(--separator-width); border-radius: 0 0 var(--bottom-radius) var(--bottom-radius); }
 @media (prefers-reduced-motion: no-preference) { .path-bar { transition-property: border-width; transition-duration: 0.2s; transition-timing-function: ease-in-out; } }
 
-.path-bar-pinned { --separator-width: 5px; --top-pad: var(--root-pad); position: fixed; top: 0; z-index: 1000; width: calc(100% - 2*var(--base-margin)); box-shadow: 0 5px 0 0 var(--bg-section); padding-top: var(--base-margin); background: var(--bg-base); }
+.path-bar-pinned { --separator-width: 5px; --top-pad: var(--root-pad); position: fixed; top: 0; z-index: 1000; width: calc(100% - 2*var(--base-margin)); box-shadow: 0 5px 0 0 var(--bg-section); padding-top: var(--base-margin); background: var(--bg-section); }
 
 .path-bar__item, .path-bar__item:visited, .path-bar__item:active, .path-bar__separator { text-decoration: none; color: var(--subtle-text); }
 

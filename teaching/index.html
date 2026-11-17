@@ -7,7 +7,7 @@
 
     <title>Jonas Vonäsch</title>
 
-    <link rel="stylesheet" href="/assets/css/default-style.css?v=65d108239bdc0305f535ac709049e633406b739f">
+    <link rel="stylesheet" href="/assets/css/default-style.css?v=409e5b621652d8ea19802f316bb8efd516143008">
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
@@ -22,7 +22,7 @@
 
   <body>
 
-    <div class="content-wrapper default">
+    <div class="content-wrapper sidebar-layout default">
 
       <div class="site-header">
         <div  class="site-title-frame">
@@ -67,8 +67,76 @@
         </div>
       </div>
       
-      <div id="page-wrapper" class="page-wrapper">
-        
+      
+        <div class="body-wrapper">
+          
+          <nav class="sidebar-page__nav" aria-label="Page sections">
+            <ol class="sidebar-page__list">
+              
+                <li>
+                  <a class="sidebar-page__link" href="/teaching/" aria-current="page">
+                    Lernmaterialien
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="sidebar-page__link" href="/teaching/01-week-1.html">
+                    Woche 1
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="sidebar-page__link" href="/teaching/02-week-2.html">
+                    Woche 2
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="sidebar-page__link" href="/teaching/03-week-3.html">
+                    Woche 3
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="sidebar-page__link" href="/teaching/04-week-4.html">
+                    Woche 4
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="sidebar-page__link" href="/teaching/05-week-5.html">
+                    Woche 5
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="sidebar-page__link" href="/teaching/06-week-6.html">
+                    Woche 6
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="sidebar-page__link" href="/teaching/07-week-7.html">
+                    Woche 7
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="sidebar-page__link" href="/teaching/08-week-8.html">
+                    Woche 8
+                  </a>
+                </li>
+              
+                <li>
+                  <a class="sidebar-page__link" href="/teaching/09-week-9.html">
+                    Woche 9
+                  </a>
+                </li>
+              
+            </ol>
+          </nav>
+          <div id="page-wrapper" class="page-wrapper">
+            
 
 
 <div class="path-bar-frame" id="path-bar-frame">
@@ -79,6 +147,9 @@
         
           
           
+          
+            
+            
             
             
             
@@ -97,15 +168,9 @@
   </div>
 </div>
 
-        <section id="page-content" class="page-content">  
-          <article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">Lernmaterialien</h1>
-  </header>
-
-  <div class="post-content">
-    <p>Diese Seite enthält Lernmaterialien für den Kurs <em>401-0663-00L</em> “Numerical Methods for Computer Science” im Herbstsemester 2026 an der ETH Zürich. Die Folien beinhalten screenshots aus dem dazugehörigen Skript, mit Erlaubnis von Prof. Gradinaru.</p>
+            <section id="page-content" class="page-content">
+              <h2 class="page-title">Lernmaterialien</h2>
+              <p>Diese Seite enthält Lernmaterialien für den Kurs <em>401-0663-00L</em> “Numerical Methods for Computer Science” im Herbstsemester 2026 an der ETH Zürich. Die Folien beinhalten screenshots aus dem dazugehörigen Skript, mit Erlaubnis von Prof. Gradinaru.</p>
 
 <ul>
   <li><a href="https://moodle-app2.let.ethz.ch/course/view.php?id=28728">Kurs-Moodle</a></li>
@@ -114,180 +179,10 @@
   <li><a href="/teaching/setup.html">Python Einführung</a></li>
 </ul>
 
-<hr />
-
-<blockquote class="subtle">
-  <h3 id="woche-1---rundungsfehler--ableitungen">Woche 1 - <em>Rundungsfehler / Ableitungen</em></h3>
-
-  <p>Slides: <a href="/assets/data/slides/Woche%201.pdf">PDF</a> <a href="/assets/data/slides/Woche%201.pptx">PowerPoint</a> <br /></p>
-
-  <p><strong>Code-Beispiele</strong>:</p>
-  <ul>
-    <li><strong><a href="/teaching/code/scratchpad-session-1.html">Scratchpad aus der Übungsstunde</a></strong></li>
-    <li><a href="/teaching/code/ausloeschung.html">Auslöschung bei Ableitung</a></li>
-    <li><a href="/teaching/code/quadratische-gleichung.html">Quadratische Gleichung</a></li>
-  </ul>
-</blockquote>
-
-<blockquote class="spoiler">
-  <p><strong>Hinweise für die Aufgaben</strong></p>
-
-  <p><strong>Aufgabe 3</strong>: <em>Multiplikation mit einer Diagonalmatrix</em> produziert in codeexpert unschöne Resultate. Wenn ihr die Zeilen 9-13 ersetzt mit:</p>
-
-  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="p">.</span><span class="n">perf_counter</span><span class="p">()</span>
-<span class="c1">#start = time.process_time()
-</span><span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="c1">#end = time.process_time()
-</span><span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="p">.</span><span class="n">perf_counter</span><span class="p">()</span>
-</code></pre></div>  </div>
-
-  <p>sollte dieses Problem weniger schwerwiegend sein. Dies ist ein Problem mit der Genauigkeit verschiedener Messmethoden des time-moduls. Dafür bekommt ihr keinen Punkteabzug.</p>
-
-  <hr />
-
-  <p><strong>Aufgabe 4</strong>: <em>Multiplikation mit dem oberen Teil einer Matrix</em>: Bitte beachtet, dass <em>A@B.T</em> noch nicht eine Dreiecksmatrix ist. Ihr sollt aber mit dem oberen Dreieck von <em>A@B.T</em> multiplizieren. Die Herausforderung ist das Rechnen mit <em>nur</em> einem Teil der Matrix.</p>
-</blockquote>
-
-<hr />
-
-<blockquote class="subtle">
-  <h3 id="woche-2---polynomielle-interpolation">Woche 2 - <em>Polynomielle Interpolation</em></h3>
-  <p>Slides: <a href="/assets/data/slides/Woche%202.pdf">PDF</a> <a href="/assets/data/slides/Woche%202.pptx">PowerPoint</a> <br /></p>
-
-  <p><strong>Code-Beispiele</strong>:</p>
-  <ul>
-    <li><a href="/teaching/code/richardson.html">Richardson-Beispiel</a></li>
-    <li><a href="/teaching/code/matrix-recursion.html">Matrix-Rekursion</a></li>
-  </ul>
-</blockquote>
-
-<blockquote class="spoiler">
-  <p><strong>Hinweise für die Aufgaben</strong></p>
-
-  <ul>
-    <li>
-      <p>Wenn der Relative Fehler einer numerischen Annäherung einen <strong>positiven Exponenten</strong> hat, ist meistens die Berechnung falsch.</p>
-    </li>
-    <li>
-      <p><strong>Aufgabe 2</strong>: Bei der rekursiven Berechnung der Dividierten Differenzen, versucht die Funktion <em>divdiff_rec</em> selber rekursiv aufzurufen. Es sollte nur <em>ein</em> rekursiver Aufruf nötig sein, da eure Laufzeit sich sonst exponentiell verhält.</p>
-    </li>
-  </ul>
-</blockquote>
-
-<hr />
-
-<blockquote class="subtle">
-  <h3 id="woche-3---fourier-interpolation">Woche 3 - <em>Fourier-Interpolation</em></h3>
-  <p>Slides: <a href="/assets/data/slides/Woche%203.pdf">PDF</a> <a href="/assets/data/slides/Woche%203.pptx">PowerPoint</a> <br /></p>
-
-  <p><strong>Code-Beispiele</strong>:</p>
-  <ul>
-    <li><a href="/teaching/code/neg-oscillations.html">Negative Oszillationen</a></li>
-    <li><a href="/teaching/code/fourier-toy-example.html">Fourier-Beispiel Übungsstunde</a></li>
-  </ul>
-</blockquote>
-
-<blockquote class="spoiler">
-  <p><strong>Zusatzmaterial</strong>:</p>
-
-  <p>Seht euch gerne das folgende Video an für eine graphische Erklärung von Fourier-Transformationen:</p>
-  <iframe class="video-embed" src="https://www.youtube.com/embed/r6sGWTCMz2k" title="But what is a fourier series?" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="margin-bottom: 20px" allowfullscreen=""></iframe>
-</blockquote>
-
-<hr />
-
-<blockquote class="subtle">
-  <h3 id="woche-4---splines--kubische-interpolation">Woche 4 - <em>Splines / Kubische Interpolation</em></h3>
-  <p>Slides: <a href="/assets/data/slides/Woche%204.pdf">PDF</a> <a href="/assets/data/slides/Woche%204.pptx">PowerPoint</a> <br />
-Hilfsdokument: <a href="/assets/data/files/quad-splines.pdf">Quadratische Splines</a></p>
-
-  <p><strong>Code-Beispiele</strong>:</p>
-  <ul>
-    <li><a href="/teaching/code/cos-transform.html">Cosinus-Transformation</a></li>
-    <li><a href="/teaching/code/cubic-spline.html">Kubische Splines</a></li>
-    <li><a href="/teaching/code/splines-manual.html">Manuelle Splines</a></li>
-    <li><a href="/teaching/code/stueckweise.html">Stückweise Interpolation</a></li>
-  </ul>
-</blockquote>
-
-<hr />
-
-<blockquote class="subtle">
-  <h3 id="woche-5---numerische-quadratur">Woche 5 - <em>Numerische Quadratur</em></h3>
-  <p>Slides: <a href="/assets/data/slides/Woche%205.pdf">PDF</a> <a href="/assets/data/slides/Woche%205.pptx">PowerPoint</a> <br /></p>
-
-  <p><strong>Code-Beispiele</strong>:</p>
-  <ul>
-    <li><a href="/teaching/code/aequidistant-summiert.html">Äquidistant summierte Quadraturregeln</a></li>
-    <li><a href="/teaching/code/mittelpunktregel-visuell.html">Mittelpunktregel visualisiert</a></li>
-    <li><a href="/teaching/code/romberg.html">Romberg-Schema</a></li>
-    <li><a href="/teaching/code/adaptive-quadratur.html">Adaptive Quadratur</a></li>
-  </ul>
-</blockquote>
-
-<hr />
-
-<blockquote class="subtle">
-  <h3 id="woche-6---gauß-quadratur">Woche 6 - <em>Gauß-Quadratur</em></h3>
-  <p>Slides: <a href="/assets/data/slides/Woche%206.pdf">PDF</a> <a href="/assets/data/slides/Woche%206.pptx">PowerPoint</a> <br />
-Hilfsdokument: <a href="/assets/data/files/duffy-mapping.pdf">Quadratur auf Dreieck</a></p>
-
-  <p><strong>Code-Beispiele</strong>:</p>
-  <ul>
-    <li><a href="/teaching/code/legendre-quad.html">Gauss-Legendre-Quadratur</a></li>
-    <li><a href="/teaching/code/jacobi-quad.html">Gauss-Jacobi-Quadratur</a></li>
-    <li><a href="/teaching/code/hermite-quad.html">Gauss-Hermite-Quadratur</a></li>
-  </ul>
-</blockquote>
-
-<hr />
-
-<blockquote class="subtle">
-  <h3 id="woche-7---monte-carlo-methoden">Woche 7 - <em>Monte-Carlo-Methoden</em></h3>
-  <p>Slides: <a href="/assets/data/slides/Woche%207.pdf">PDF</a> <a href="/assets/data/slides/Woche%207.pptx">PowerPoint</a> <br /></p>
-
-  <p><strong>Code-Beispiele</strong>:</p>
-  <ul>
-    <li><a href="/teaching/code/mt-carlo-circle.html">Monte-Carlo-Integration über den Einheitskreis</a></li>
-    <li><a href="/teaching/code/mt-carlo-control-variates.html">Monte-Carlo mit Kontrollvariablen</a></li>
-    <li><a href="/teaching/code/mt-carlo-importance-sampling.html">Monte-Carlo mit Importance Sampling</a></li>
-    <li><a href="/teaching/code/quasi-mt-carlo.html">Quasi-Monte-Carlo</a></li>
-  </ul>
-</blockquote>
-
-<hr />
-
-<blockquote class="subtle">
-  <h3 id="woche-8---nullstellen-suche">Woche 8 - <em>Nullstellen-Suche</em></h3>
-  <p>Slides: <a href="/assets/data/slides/Woche%208.pdf">PDF</a> <a href="/assets/data/slides/Woche%208.pptx">PowerPoint</a> <br /></p>
-
-  <p><strong>Code-Beispiele</strong>:</p>
-  <ul>
-    <li><a href="/teaching/code/newton-verfahren-1D.html">Newton-Verfahren in 1D</a></li>
-    <li><a href="/teaching/code/newton-verfahren-2D.html">Newton-Verfahren in 2D</a></li>
-    <li><a href="/teaching/code/newton-roots.html">Newton-Verfahren: Wurzel</a></li>
-  </ul>
-
-</blockquote>
-
-<hr />
-
-<blockquote class="subtle">
-  <h3 id="woche-9---linalg-recap">Woche 9 - <em>Linalg Recap</em></h3>
-  <p>Slides: <a href="/assets/data/slides/Woche%209.pdf">PDF</a> <a href="/assets/data/slides/Woche%209.pptx">PowerPoint</a> <br /></p>
-
-  <p><strong>Code-Beispiele</strong>:</p>
-  <ul>
-    <li><a href="/teaching/code/sparse.html">Sparse Matrizen</a></li>
-  </ul>
-</blockquote>
-
-  </div>
-
-</article>
-
-        </section>
-      </div>
+            </section>
+          </div>
+        </div>
+      
     </div>
 
     <footer>
