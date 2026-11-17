@@ -5,9 +5,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amarante&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-:root[data-theme="light"] { --bg-ui: #ffeadd; --bg-section: #fff7f3; --bg-base: #fff7f3; --bg-accent: #e8e2de; --accent: #e8e2de; --bg-button: var(--bg-base); --hover-bg: #ffa488; --text: #07423e; --title: #208f88; --primary: #f0f0f0; --secondary: #eeeeee; --highlight: #7affc8; --hover-link: var(--title); --border-extra: #ff7b00; --bg-extra: #ffe7e1; --border-info: #007bff; --bg-info: #d1efff; --border-spoiler: #9d00ff; --bg-spoiler: #fdd1ff; --border-code: #e0e0e0; --bg-code: #ffffff; --subtle-text: #aaaaaa; --link: #666666; --visited: #777777; --code: #5a5a5a; color-scheme: light; color: var(--text); background-color: var(--bg-base); }
+/*
+:root[data-theme="light"] { --bg-ui: #ffeadd; //#f5efeb; --bg-section: #fff7f3; --bg-base: #fff7f3; --bg-accent: #e8e2de; --accent: #e8e2de;
+ --bg-button: var(--bg-base); --hover-bg: #ffa488; --text: #07423e; --title: #208f88; --primary: #f0f0f0; --secondary: #eeeeee; --highlight: #7affc8; --hover-link: var(--title);
+ --border-extra: #ff7b00; --bg-extra: #ffe7e1; --border-info: #007bff; --bg-info: #d1efff; --border-spoiler: #9d00ff; --bg-spoiler: #fdd1ff; --border-code: #e0e0e0; --bg-code: #ffffff;
+ --subtle-text: #aaaaaa; --link: #666666; --visited: #777777; --code: #5a5a5a;
+ color-scheme: light; color: var(--text); background-color: var(--bg-base);
+}
 
-:root[data-theme="dark"] { --bg-ui: #07423e; --bg-section: #003632; --bg-base: #003632; --bg-accent: #00544e; --bg-button: var(--bg-accent); --hover-bg: #587475; --text: #f3efe2; --title: #ffc894; --primary: #073642; --secondary: #0b3a46; --highlight: #2aa198; --hover-link: var(--title); --border-extra: #cb4b16; --bg-extra: #3a2217; --border-info: #268bd2; --bg-info: #0b4b66; --border-spoiler: #7c26d2; --bg-spoiler: #310b66; --border-code: #586e75; --bg-code: #00232b; --subtle-text: #668e8b; --link: #cecece; --visited: #e2e3ff; --code: #cbe2e2; color-scheme: dark; color: var(--text); background-color: var(--bg-base); }
+:root[data-theme="dark"] { --bg-ui: #07423e; --bg-section: #003632; --bg-base: #003632; --bg-accent: #00544e;
+ --bg-button: var(--bg-accent); --hover-bg: #587475;
+ --text: #f3efe2; --title: #ffc894; --primary: #073642; --secondary: #0b3a46; --highlight: #2aa198; --hover-link: var(--title);
+ --border-extra: #cb4b16; --bg-extra: #3a2217; --border-info: #268bd2; --bg-info: #0b4b66; --border-spoiler: #7c26d2; --bg-spoiler: #310b66; --border-code: #586e75; --bg-code: #00232b;
+ --subtle-text: #668e8b; --link: #cecece; --visited: #e2e3ff; --code: #cbe2e2;
+ color-scheme: dark; color: var(--text); background-color: var(--bg-base);
+}
+*/
+:root[data-theme="light"] { --bg-ui: #fdfaf8; --bg-section: #f8f8f6; --bg-base: #f8f7f5; --bg-accent: #efece9; --accent: #c5d3ce; --bg-button: var(--bg-base); --hover-bg: #e6a18b; --text: #193b38; --title: #c24713; --primary: #eef1ed; --secondary: #dfe7e2; --highlight: #83d2b0; --hover-link: var(--title); --border-extra: #c15d2f; --bg-extra: #f8e9e1; --border-info: #286da0; --bg-info: #e2eff7; --border-spoiler: #80509a; --bg-spoiler: #f0e6f5; --border-code: #c7d2cd; --bg-code: #fdfefd; --subtle-text: #687b76; --link: #345b57; --visited: #536f6a; --code: #274643; color-scheme: light; color: var(--text); background-color: var(--bg-base); }
+
+:root[data-theme="dark"] { --bg-ui: #173c3a; --bg-section: #102e2d; --bg-base: #0d2525; --bg-accent: #24534e; --accent: #326761; --bg-button: var(--bg-accent); --hover-bg: #855b4f; --text: #f3efe3; --title: #f2b27f; --primary: #153331; --secondary: #1b403d; --highlight: #39a994; --hover-link: var(--title); --border-extra: #d06a38; --bg-extra: #38271e; --border-info: #5a9ac5; --bg-info: #183743; --border-spoiler: #a76ac1; --bg-spoiler: #30243a; --border-code: #52716d; --bg-code: #102524; --subtle-text: #8eaaa4; --link: #d4e5df; --visited: #b9d1c9; --code: #d1e5df; color-scheme: dark; color: var(--text); background-color: var(--bg-base); }
 
 :link { color: var(--link); }
 
@@ -186,7 +202,7 @@ footer { margin: 0 auto; width: calc(100% - (var(--base-margin) * 2)); padding-b
 .path-bar { display: flex; flex-direction: row; align-items: center; justify-content: left; max-width: var(--max-page-width); font-size: var(--path-bar-font-size); font-family: var(--font-family); border-width: 0px; border-style: solid; border-color: var(--bg-ui); border-bottom-width: var(--separator-width); border-radius: 0 0 var(--bottom-radius) var(--bottom-radius); }
 @media (prefers-reduced-motion: no-preference) { .path-bar { transition-property: border-width; transition-duration: 0.2s; transition-timing-function: ease-in-out; } }
 
-.path-bar-pinned { --separator-width: 5px; --top-pad: var(--root-pad); position: fixed; top: 0; z-index: 1000; max-width: none; width: calc(100% - 2*var(--base-margin)); box-shadow: 0 5px 0 0 var(--bg-section); padding-top: var(--base-margin); background: var(--bg-section); }
+.path-bar-pinned { --separator-width: 5px; --top-pad: var(--root-pad); position: fixed; top: 0; z-index: 1000; max-width: none; width: calc(100% - 2*var(--base-margin)); box-shadow: 0 5px 0 0 var(--bg-base); padding-top: var(--base-margin); background: var(--bg-base); }
 
 .path-bar__item, .path-bar__item:visited, .path-bar__item:active, .path-bar__separator { text-decoration: none; color: var(--subtle-text); }
 
@@ -230,7 +246,7 @@ footer { margin: 0 auto; width: calc(100% - (var(--base-margin) * 2)); padding-b
 
 .sidebar-page__arrow--disabled { visibility: hidden; }
 
-.sidebar-page__select { min-width: 0; width: 100%; height: 44px; border: 0; border-radius: 50vh; background: var(--bg-ui); color: var(--link); font: inherit; text-align: center; cursor: pointer; }
+.sidebar-page__select { min-width: 0; width: 100%; height: 44px; border: 0; background: var(--bg-ui); color: var(--link); font: inherit; text-align: center; cursor: pointer; }
 
 .sidebar-page__select:hover, .sidebar-page__select:focus { color: var(--title); }
 
