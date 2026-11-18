@@ -101,13 +101,13 @@
   a:hover { color: var(--hover-link); }
   .copyable-block { transition-duration: var(--transition-time); }
   .copy-button { transition-duration: var(--transition-time); } }
-:root { display: flex; align-items: flex-start; justify-content: center; min-width: 0; width: 100%; height: 100%; --inner-radius: 20px; --border-radius: 30px; --outer-radius: 45px; --border-width: 30px; --base-margin: 10px; --root-pad: 30px; --inner-pad: 15px; --max-page-width: 900px; }
+:root { display: flex; align-items: flex-start; justify-content: center; min-width: 0; width: 100%; height: 100%; --inner-radius: 20px; --border-radius: 30px; --border-width: 30px; --base-margin: 10px; --root-pad: 30px; --inner-pad: 15px; --max-page-width: 900px; }
 
 body { min-width: 0; width: 100%; min-height: 100vh; margin: 0; display: flex; flex-direction: column; align-items: stretch; }
 
 .content-wrapper { flex: 1 0 auto; max-width: var(--max-page-width); padding: 0px; width: calc(100% - (var(--base-margin) * 2)); margin: var(--base-margin) auto; align-items: stretch; display: flex; flex-direction: column; text-align: left; }
 
-section { margin: var(--base-margin); padding: var(--root-pad); padding-top: 0px; overflow-y: hidden; border-radius: var(--border-radius); background: var(--bg-section); }
+section { margin: var(--base-margin); padding: var(--root-pad); padding-top: 0px; overflow-y: hidden; border-radius: var(--inner-radius); background: var(--bg-section); }
 
 .page-wrapper { display: flex; flex-direction: column; padding-top: var(--root-pad); margin-top: var(--base-margin); overflow-y: hidden; border-radius: var(--border-radius); background: var(--bg-ui); }
 
@@ -177,9 +177,7 @@ h1 { font-size: var(--h1-size); }
 
 hr { background-color: var(--bg-accent); width: 70%; height: 3px; border-width: 0; border-style: solid; margin-top: var(--separator-margin); margin-bottom: var(--separator-margin); }
 
-.site-header { border-radius: var(--outer-radius); background-image: var(--root-gradient); }
-
-.site-title-frame { padding: var(--inner-pad); overflow: hidden; border-radius: var(--inner-radius); background: var(--bg-ui); }
+.site-title-frame { padding: var(--inner-pad); overflow: hidden; border-radius: var(--border-radius); background: var(--bg-ui); }
 
 .site-title { margin: var(--inner-pad); color: var(--title); }
 
